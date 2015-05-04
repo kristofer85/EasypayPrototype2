@@ -28,19 +28,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="User:XXXX"
+        android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="48dp"
         android:layout_below="@+id/textView4"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_alignStart="@+id/lblAmount" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:id="@+id/welcomeTxt"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -67,11 +67,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm Amount"
+        android:text="@string/accept"
         android:id="@+id/btnConfirm"
         android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView3"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="50dp"
+        android:background="#888888" />
 
 </RelativeLayout>

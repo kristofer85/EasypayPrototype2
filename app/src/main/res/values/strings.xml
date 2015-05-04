@@ -1,17 +1,42 @@
 <resources>
     <string name="app_name">EasypayPrototype</string>
 
-    <string name="lbl_access">enter access code!</string>
+    <string name="lbl_access">Sláið inn aðgangskóða</string>
     <string name="Product_Name">EasyPay</string>
     <string name="Product_Type">Phone POS</string>
-    <string name="Amount">Amount</string>
+    <string name="Amount">Upphæð</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_amount">Amount</string>
+    <string name="title_activity_amount">Upphæð</string>
     <string name="title_activity_payment">Payment</string>
     <string name="title_activity_enter_card_manualy">EnterCardManualy</string>
     <string name="title_activity_payment_result">PaymentResult</string>
     <string name="title_activity_receipt">Receipt</string>
     <string name="title_activity_receipt_sent">ReceiptSent</string>
+    <string name="accept">Samþykja</string>
+    <string name="user">Notandi: Fyrirtæki ehf</string>
+    <string name="welcome">Velkomin!</string>
+    <string name="amount">Upphæð: 666 ISK</string>
+    <string name="card_number">Kortanúmer:</string>
+    <string name="active">Gildistími:</string>
+    <string name="cvs">CVS:</string>
+    <string name="card_symbol">Card symbol picture</string>
+    <string name="pay">Legðu kortið upp að símanum til þess að greiða</string>
+    <string name="enter_cardnumber">Smeltu á hnappin til þess að slá inn kortanúmer</string>
+    <string name="insert_cardnumber">Setja inn Kortanúmer</string>
+    <string name="confirmed">Heimilað</string>
+    <string name="info_buisines">Fyrirtæki ehf</string>
+    <string name="info_adress">Alvörunigata 1337</string>
+    <string name="info_date">01/01/2015 12:00</string>
+    <string name="is_receipt">Má bjóða þér kvittun?</string>
+    <string name="no">Nei</string>
+    <string name="yes">Já</string>
+    <string name="sms">Textaskilaboð</string>
+    <string name="email">Tölvupóstur</string>
+    <string name="thanks">Takk fyrir viðskiptin</string>
+    <string name="done">Lokið</string>
+    <string name="receipt">Kvittun þín hefur verið sent á: tölvupóstur@tölvupóstur.is</string>
+    <string name="phone">Vinsamlegast sláið inn símanúmer</string>
+    <string name="enter_email">Vinsamlegast sláið inn netfang</string>
 
     <string name="hello_world">Hello world!</string>
 </resources>
