@@ -52,7 +52,8 @@
         android:text="@string/accept"
         android:id="@+id/btnAccess"
         android:layout_below="@+id/txtAccess"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#33CC33" />
 
     <TextView
         android:layout_width="wrap_content"
