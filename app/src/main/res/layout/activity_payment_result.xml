@@ -21,8 +21,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView18"
         android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
-        style="@style/productType" />
+        android:layout_centerHorizontal="true"/>
+
 
     <TextView
         android:layout_width="fill_parent"

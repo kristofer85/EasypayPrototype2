@@ -13,8 +13,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class Amount extends Activity {
-
+public class Amount extends Activity
+{
+    private EditText Screen;
+    private float numberBfr;
+    private float numberAtr;
+    private boolean oper =false;
+    private char operator;
+    public ButtonClickListener btnClick;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +29,29 @@ public class Amount extends Activity {
         Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
         final String user = getIntent().getStringExtra("User_Name");
         txtUser.setText("User: "+ user);
-        final EditText CurAmount = (EditText) findViewById(R.id.txtAmount);
-        CurAmount.addTextChangedListener(new TextWatcher() {
+        Screen = (EditText) findViewById(R.id.txtAmount);
+
+        btnClick = new ButtonClickListener();
+        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnNeg};
+
+        for( int id:idList)
+        {
+            View v = (View) findViewById(id);
+            v.setOnClickListener(btnClick);
+        }
+        Screen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                for( int id:idList)
+                {
+                    View V = (View) findViewById(id);
+                    V.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        Screen.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after)
             {
@@ -51,7 +78,7 @@ public class Amount extends Activity {
             @Override
             public void onClick(View v)
             {
-                String pay = CurAmount.getText().toString();
+                String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), Payment.class);
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
@@ -82,4 +109,120 @@ public class Amount extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void CalcNr(char op)
+    {
+        if(oper == true)
+        {
+            //String ScreenNr = Screen2.getText().toString();
+            //ScreenNr += " "+ String.valueOf(numberBfr) + " "+ String.valueOf(operator) + " " + String.valueOf(numberAtr) + " = ";
+            switch (op)
+            {
+                case '+':
+                    numberBfr = numberBfr + numberAtr;
+                    numberAtr = 0.0f;
+                    break;
+                case '-':
+                    numberBfr = numberBfr - numberAtr;
+                    numberAtr = 0.0f;
+                    break;
+                case '*':
+                    numberBfr = numberBfr * numberAtr;
+                    numberAtr = 0.0f;
+                    break;
+                case '/':
+                    if(numberAtr != 0 && numberAtr != 0.0f)
+                    {
+                        numberBfr = numberBfr / numberAtr;
+                        numberAtr = 0.0f;
+                    }
+                    else
+                    {
+                        Screen.setText("X/0 = the end of the world");
+                    }
+
+                    break;
+            }
+            //ScreenNr += String.valueOf(numberBfr)+ " ";
+            //Screen2.setText(ScreenNr);
+        }
+        else
+        {
+            numberBfr = Float.parseFloat(Screen.getText().toString());
+            numberAtr = 0.0f;
+        }
+
+    }
+
+    private class ButtonClickListener implements View.OnClickListener
+    {
+        public void onClick(View V)
+        {
+            switch (V.getId())
+            {
+                case R.id.btnC:
+                    Screen.setText("0");
+                    //Screen2.setText("0");
+                    numberBfr = 0.0f;
+                    numberAtr = 0.0f;
+                    oper = false;
+                    operator = ' ';
+                    break;
+                case R.id.btnDel:
+                    //to do impement backspace function for undo
+                    break;
+                case R.id.btnEquals:
+                    CalcNr(operator);
+                    Screen.setText(String.valueOf(numberBfr));
+                    oper = false;
+                    break;
+                case R.id.btnPlus:
+                    CalcNr(operator);
+                    Screen.setText("");
+                    operator = '+';
+                    oper = true;
+                    break;
+                case R.id.btnMinus:
+                    CalcNr(operator);
+                    Screen.setText("");
+                    operator = '-';
+                    oper = true;
+                    break;
+                case R.id.btnMult:
+                    CalcNr(operator);
+                    Screen.setText("");
+                    operator = '*';
+                    oper = true;
+                    break;
+                case R.id.btnDiv:
+                    CalcNr(operator);
+                    Screen.setText("");
+                    operator = '/';
+                    oper = true;
+                    break;
+                case R.id.btnNeg:
+                    String ScreenNeg = Screen.getText().toString();
+                    numberAtr = Float.parseFloat(ScreenNeg);
+                    numberAtr *= -1.0f;
+                    Screen.setText(String.valueOf(numberAtr));
+                    break;
+                default:
+                    String numb = ((Button) V).getText().toString();
+                    String ScreenNr = Screen.getText().toString();
+                    if(ScreenNr.equals("0"))
+                    {
+                        Screen.setText(numb);
+                    }
+                    else
+                    {
+                        ScreenNr = ScreenNr + numb;
+                        numberAtr = Float.parseFloat(ScreenNr);
+                        Screen.setText(ScreenNr);
+                    }
+
+            }
+
+        }
+    }
+
 }
