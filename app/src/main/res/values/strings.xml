@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EasypayPrototype</string>
+
+    <string name="lbl_access">enter access code!</string>
+    <string name="Product_Name">EasyPay</string>
+    <string name="Product_Type">Phone POS</string>
+    <string name="Amount">Amount</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_amount">Amount</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_enter_card_manualy">EnterCardManualy</string>
+    <string name="title_activity_payment_result">PaymentResult</string>
+    <string name="title_activity_receipt">Receipt</string>
+    <string name="title_activity_receipt_sent">ReceiptSent</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

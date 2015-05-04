@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notandi.easypayprototype" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Access"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Amount"
+            android:label="@string/title_activity_amount" >
+        </activity>
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".EnterCardManualy"
+            android:label="@string/title_activity_enter_card_manualy" >
+        </activity>
+        <activity
+            android:name=".PaymentResult"
+            android:label="@string/title_activity_payment_result" >
+        </activity>
+        <activity
+            android:name=".Receipt"
+            android:label="@string/title_activity_receipt" >
+        </activity>
+        <activity
+            android:name=".ReceiptSent"
+            android:label="@string/title_activity_receipt_sent" >
+        </activity>
+    </application>
+
+</manifest>

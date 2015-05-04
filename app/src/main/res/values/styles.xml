@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="productName">
+        <item name="android:textSize">35sp</item>
+        <item name="android:text">Easy Pay</item>
+    </style>
+    <style name="productType">
+        <item name="android:textSize">30sp</item>
+        <item name="android:text">Phone POS</item>
+    </style>
+    <style name="PaymentResult">
+        <item name="android:textSize">25sp</item>
+        <item name="android:text">Payment accepted</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">#00DD00</item>
+        <item name="android:padding">20sp</item>
+
+    </style>
+
+</resources>
