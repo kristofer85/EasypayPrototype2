@@ -19,20 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        style="@style/productType" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
         android:layout_marginTop="48dp"
-        android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/lblAmount" />
+        android:layout_alignStart="@+id/lblAmount"
+        android:layout_below="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,9 +41,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/Amount"
         android:id="@+id/lblAmount"
-        android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp" />
+        android:layout_marginTop="180dp"
+        android:layout_below="@+id/textView3" />
 
     <EditText
         android:layout_width="wrap_content"
