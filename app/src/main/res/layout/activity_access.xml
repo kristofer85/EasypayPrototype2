@@ -12,7 +12,8 @@
         android:id="@+id/lblAccess"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:layout_width="wrap_content"
