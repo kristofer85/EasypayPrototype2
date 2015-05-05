@@ -19,33 +19,11 @@ public class Receipt extends Activity {
         setContentView(R.layout.activity_receipt);
         final String user = getIntent().getStringExtra("User_Name");
 
-        final Button btnSMS = (Button) findViewById(R.id.btnSMS);
-        Button btnEmail = (Button) findViewById(R.id.btnEmail);
+
         final Button btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
         final Button btnSendEmail = (Button) findViewById(R.id.btnSendEmail);
 
-        btnSMS.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                TextView lblPhone = (TextView) findViewById(R.id.lblPhone);
-                EditText txtPhone = (EditText) findViewById(R.id.txtPhone);
-                lblPhone.setVisibility(View.VISIBLE);
-                txtPhone.setVisibility(View.VISIBLE);
-                btnSendSMS.setVisibility(View.VISIBLE);
-            }
-        });
-        btnEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                TextView lblEmail = (TextView) findViewById(R.id.lblEmail);
-                EditText txtEmail = (EditText) findViewById(R.id.txtEmail);
-                lblEmail.setVisibility(View.VISIBLE);
-                txtEmail.setVisibility(View.VISIBLE);
-                btnSendEmail.setVisibility(View.VISIBLE);
-            }
-        });
+
         btnSendSMS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
