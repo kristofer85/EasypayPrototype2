@@ -5,7 +5,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.notandi.easypayprototype.PaymentResult"
-    android:background="@drawable/radialgradientback">
+    android:background="@drawable/radialgradientback"
+    android:id="@+id/PaymentResult">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,20 +19,54 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/info_rvk"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_below="@+id/lblBusinessAddress"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_visa"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:id="@+id/textView2"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_valitor"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView18"
         android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
-        style="@style/productType" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/confirmed"
+        android:textSize="30sp"
         android:id="@+id/lblPaymentRecived"
         android:layout_below="@+id/textView18"
-        android:layout_centerHorizontal="true"
-        style="@style/PaymentResult" />
+        style="@style/PaymentResult"
+        android:gravity="center"
+        android:background="#ff37a829"
+        android:textColor="#ff232323" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,7 +75,8 @@
         android:text="@string/info_buisines"
         android:id="@+id/lblBusinessName"
         android:layout_below="@+id/lblPaymentRecived"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,13 +88,14 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/amount"
         android:id="@+id/lblChargedAmount"
-        android:layout_alignEnd="@+id/lblBusinessAddress"
-        android:layout_centerVertical="true" />
+        android:layout_above="@+id/btnReceiptNo"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,27 +104,27 @@
         android:text="@string/is_receipt"
         android:id="@+id/textView22"
         android:textStyle="bold"
-        android:layout_below="@+id/lblChargedAmount"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView17" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:text="@string/no"
         android:id="@+id/btnReceiptNo"
-        android:textSize="40sp"
-        android:layout_below="@+id/textView22"
-        android:layout_alignStart="@+id/textView22" />
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toEndOf="@+id/lblDate" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:text="@string/yes"
         android:id="@+id/btnReceiptYes"
-        android:textSize="40sp"
-        android:layout_below="@+id/textView22"
-        android:layout_alignEnd="@+id/textView22" />
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/lblBusinessName"
+        android:layout_alignBottom="@+id/btnReceiptNo" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,7 +132,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/info_date"
         android:id="@+id/lblDate"
-        android:layout_below="@+id/lblBusinessAddress"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
 
 </RelativeLayout>
