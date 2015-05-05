@@ -15,7 +15,7 @@
     <string name="accept">Samþykja</string>
     <string name="user">Notandi: Fyrirtæki ehf</string>
     <string name="welcome">Velkomin!</string>
-    <string name="amount">Upphæð: 666 ISK</string>
+    <string name="amount">Viðskipti ISK.</string>
     <string name="card_number">Kortanúmer:</string>
     <string name="active">Gildistími:</string>
     <string name="cvs">CVS:</string>
@@ -24,10 +24,15 @@
     <string name="enter_cardnumber">Smeltu á hnappin til þess að slá inn kortanúmer</string>
     <string name="insert_cardnumber">Setja inn Kortanúmer</string>
     <string name="confirmed">Heimilað</string>
+    <string name="info_rvk">101 Reykjavík</string>
     <string name="info_buisines">Fyrirtæki ehf</string>
-    <string name="info_adress">Alvörunigata 1337</string>
-    <string name="info_date">01/01/2015 12:00</string>
-    <string name="is_receipt">Má bjóða þér kvittun?</string>
+    <string name="info_visa">Visa Electron</string>
+    <string name="info_valitor">Færsluhirðir: Valitor</string>
+    <string name="info_adress">Strandgata 1337</string>
+    <string name="info_date">01.01.2015</string>
+    <string name="info_time_stamp">Tími: 13:37</string>
+    <string name="info_total_amount">666</string>
+    <string name="is_receipt">Kvittun:</string>
     <string name="no">Nei</string>
     <string name="yes">Já</string>
     <string name="sms">Textaskilaboð</string>
