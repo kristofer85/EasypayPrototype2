@@ -24,7 +24,8 @@
         android:textSize="24sp"
         android:layout_below="@+id/lblBusinessAddress"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView12" />
+        android:id="@+id/textView12"
+        android:layout_marginLeft="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,8 +37,9 @@
         android:textIsSelectable="false"
         android:layout_below="@+id/textView12"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +48,26 @@
         android:textSize="24sp"
         android:id="@+id/textView4"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_total_amount"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/lblChargedAmount"
+        android:layout_alignEnd="@+id/btnReceiptNo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_time_stamp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/textView18" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,12 +75,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView18"
         android:layout_below="@+id/textView17"
-<<<<<<< HEAD
         android:layout_centerHorizontal="true" />
-=======
-        android:layout_centerHorizontal="true"/>
-
->>>>>>> d47396c5f769a7081c112741c0688a39a9174560
 
     <TextView
         android:layout_width="fill_parent"
@@ -81,7 +97,8 @@
         android:id="@+id/lblBusinessName"
         android:layout_below="@+id/lblPaymentRecived"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="7dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +107,8 @@
         android:text="@string/info_adress"
         android:id="@+id/lblBusinessAddress"
         android:layout_below="@+id/lblBusinessName"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -98,9 +116,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/amount"
         android:id="@+id/lblChargedAmount"
+        android:textSize="30sp"
         android:layout_above="@+id/btnReceiptNo"
         android:layout_alignParentStart="true"
-        android:textSize="30sp" />
+        android:layout_marginBottom="20dp"
+        android:layout_alignEnd="@+id/btnReceiptYes"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,8 +140,8 @@
         android:text="@string/no"
         android:id="@+id/btnReceiptNo"
         android:textSize="30sp"
-        android:layout_alignBottom="@+id/textView22"
-        android:layout_toEndOf="@+id/lblDate" />
+        android:layout_alignTop="@+id/btnReceiptYes"
+        android:layout_toEndOf="@+id/textView17" />
 
     <Button
         android:layout_width="80dp"
@@ -128,8 +149,8 @@
         android:text="@string/yes"
         android:id="@+id/btnReceiptYes"
         android:textSize="30sp"
-        android:layout_toEndOf="@+id/lblBusinessName"
-        android:layout_alignBottom="@+id/btnReceiptNo" />
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toEndOf="@+id/lblBusinessName" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -139,6 +160,7 @@
         android:id="@+id/lblDate"
         android:layout_below="@+id/textView4"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp" />
 
 </RelativeLayout>
