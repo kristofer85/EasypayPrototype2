@@ -24,7 +24,7 @@ public class Payment extends Activity {
         final String user = getIntent().getStringExtra("User_Name");
         final String Amount = getIntent().getStringExtra("Amount");
         txtUser.setText("User: "+ user);
-        txtAmount.setText(Amount + " KR");
+        txtAmount.setText("Viðskipti ISK. " + Amount);
         ImageButton ContactlessCard = (ImageButton) findViewById(R.id.Card);
         ContactlessCard.setOnClickListener(new View.OnClickListener() {
             @Override
