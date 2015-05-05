@@ -12,7 +12,7 @@
     <string name="title_activity_payment_result">PaymentResult</string>
     <string name="title_activity_receipt">Receipt</string>
     <string name="title_activity_receipt_sent">ReceiptSent</string>
-    <string name="accept">Samþykja</string>
+    <string name="accept">Samþykkja</string>
     <string name="user">Notandi: Fyrirtæki ehf</string>
     <string name="welcome">Velkomin!</string>
     <string name="amount">Viðskipti ISK.</string>

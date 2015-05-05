@@ -17,7 +17,7 @@
         style="@style/productName" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
@@ -61,64 +61,62 @@
         android:enabled="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="@string/accept"
         android:id="@+id/btnConfirm"
-        android:visibility="invisible"
-        android:background="#888888"
+        android:visibility="visible"
+        android:background="#37A829"
         android:layout_below="@+id/btn0"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
         android:text="@string/seven"
         android:id="@+id/btn7"
+        android:visibility="visible"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/txtAmount"
-        android:visibility="invisible" />
+        android:layout_toStartOf="@+id/btn8" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:text="@string/eight"
         android:id="@+id/btn8"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btn7"
-        android:layout_alignStart="@+id/txtAmount"
-        android:layout_toStartOf="@+id/lblAmount"
-        android:visibility="invisible" />
+        android:layout_toStartOf="@+id/btn9" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/four"
         android:id="@+id/btn4"
         android:layout_below="@+id/btn7"
-        android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/btn7"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:layout_alignStart="@+id/btn7" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/one"
         android:id="@+id/btn1"
         android:layout_below="@+id/btn4"
-        android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/btn4"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:layout_alignStart="@+id/btn4" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:text="@string/zero"
         android:id="@+id/btn0"
         android:layout_below="@+id/btn1"
-        android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/btn2"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:layout_alignStart="@+id/btn1" />
 
     <Button
         android:layout_width="wrap_content"
@@ -128,7 +126,7 @@
         android:layout_alignTop="@+id/btn4"
         android:layout_alignEnd="@+id/btn8"
         android:layout_alignStart="@+id/btn8"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
         android:layout_width="wrap_content"
@@ -138,113 +136,114 @@
         android:layout_alignTop="@+id/btn1"
         android:layout_alignEnd="@+id/btn5"
         android:layout_alignStart="@+id/btn5"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:text="@string/nine"
         android:id="@+id/btn9"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btn8"
-        android:layout_alignStart="@+id/lblAmount"
-        android:layout_alignEnd="@+id/btnConfirm"
-        android:visibility="invisible" />
+        android:layout_toStartOf="@+id/btnPlus" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/six"
         android:id="@+id/btn6"
         android:layout_alignTop="@+id/btn5"
         android:layout_alignEnd="@+id/btn9"
         android:layout_alignStart="@+id/btn9"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/three"
         android:id="@+id/btn3"
         android:layout_alignTop="@+id/btn2"
         android:layout_alignStart="@+id/btn6"
         android:layout_alignEnd="@+id/btn6"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/neg"
         android:id="@+id/btnNeg"
         android:layout_alignTop="@+id/btn0"
         android:layout_alignStart="@+id/btn3"
         android:layout_alignEnd="@+id/btn3"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/plus"
         android:id="@+id/btnPlus"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btn9"
-        android:layout_alignEnd="@id/textView3"
-        android:layout_toEndOf="@+id/btn9"
-        android:visibility="invisible" />
+        android:layout_toStartOf="@+id/btnC" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/minus"
         android:id="@+id/btnMinus"
         android:layout_alignTop="@+id/btn6"
         android:layout_alignEnd="@+id/btnPlus"
         android:layout_toEndOf="@+id/btn6"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:layout_alignStart="@+id/btnPlus" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/mul"
         android:id="@+id/btnMult"
         android:layout_alignTop="@+id/btn3"
         android:layout_alignEnd="@+id/btnMinus"
         android:layout_toEndOf="@+id/btn3"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        android:layout_alignStart="@+id/btnMinus" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/div"
         android:id="@+id/btnDiv"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btnNeg"
         android:layout_alignEnd="@+id/btnMult"
-        android:layout_toEndOf="@+id/btnNeg" />
+        android:layout_toEndOf="@+id/btnNeg"
+        android:layout_alignStart="@+id/btnMult" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/c"
         android:id="@+id/btnC"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btnPlus"
-        android:layout_toEndOf="@+id/btnPlus" />
+        android:layout_alignEnd="@+id/lblUser" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/del"
         android:id="@+id/btnDel"
         android:layout_alignTop="@+id/btnMinus"
         android:layout_alignStart="@+id/btnC"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/eq"
         android:id="@+id/btnEquals"
         android:textSize="30sp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:layout_alignTop="@+id/btnMult"
         android:layout_alignStart="@+id/btnDel" />
 
