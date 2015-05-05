@@ -40,8 +40,10 @@
     <string name="thanks">Takk fyrir viðskiptin</string>
     <string name="done">Lokið</string>
     <string name="receipt">Kvittun þín hefur verið sent á: tölvupóstur@tölvupóstur.is</string>
-    <string name="phone">Vinsamlegast sláið inn símanúmer</string>
-    <string name="enter_email">Vinsamlegast sláið inn netfang</string>
+    <string name="phone">Sláið inn símanúmer</string>
+    <string name="enter_email">Sláið inn netfang</string>
+    <string name="sms_lbl">Textaskilaboð</string>
+    <string name="email_lbl">Tölvupóstur</string>
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
