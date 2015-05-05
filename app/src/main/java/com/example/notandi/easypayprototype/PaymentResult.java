@@ -26,10 +26,10 @@ public class PaymentResult extends Activity
         final String address = getIntent().getStringExtra("Address");
         final String Amount = getIntent().getStringExtra("Amount");
         boolean paymentReceived = getIntent().getBooleanExtra("PaymentConfirmed", false);
-        businessAddress.setText("User: " + user);
-        businessName.setText("Business: "+ address);
-        PaydAmount.setText("Amount: "+ Amount + " KR");
-        if(paymentReceived == false)
+        businessAddress.setText(address);
+        businessName.setText(user);
+        PaydAmount.setText("Viðskipti ISK. "+ Amount);
+        if(!paymentReceived)
         {
             ReceivedPayment.setBackgroundColor(Color.rgb(255,0,0));
             ReceivedPayment.setText("Payment was not Received");

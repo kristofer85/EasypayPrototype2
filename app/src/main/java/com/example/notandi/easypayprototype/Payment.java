@@ -36,7 +36,7 @@ public class Payment extends Activity {
                 Intent intent = new Intent(v.getContext(), PaymentResult.class);
                 intent.putExtra("User_Name", user);
                 intent.putExtra("Amount", Amount);
-                intent.putExtra("Address", "blarg street 5");
+                intent.putExtra("Address", "Strandgata 1337");
                 intent.putExtra("PaymentConfirmed", true);
                 startActivityForResult(intent, 0);
             }
@@ -47,9 +47,8 @@ public class Payment extends Activity {
             public void onClick(View v)
             {
                 Intent intent = new Intent(v.getContext(), EnterCardManualy.class);
-                intent.putExtra("User_Name", user);
                 intent.putExtra("Amount", Amount);
-                intent.putExtra("Address", "blarg street 5");
+                intent.putExtra("Address", "Strandgata 1337");
                 startActivityForResult(intent, 0);
             }
         });

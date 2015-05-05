@@ -48,10 +48,10 @@ public class Access extends Activity {
                     }
                 }
 
-                if(activeCode == true)
+                if(activeCode)
                 {
                     Intent intent = new Intent(v.getContext(), Amount.class);
-                    intent.putExtra("User_Name","BLEH");
+                    intent.putExtra("User_Name","Fyrirtæki ehf.");
                     startActivityForResult(intent, 0);
                 }
                 else
