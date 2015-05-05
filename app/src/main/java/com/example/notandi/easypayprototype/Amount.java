@@ -28,7 +28,7 @@ public class Amount extends Activity
         TextView txtUser = (TextView) findViewById(R.id.lblUser);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
         final String user = getIntent().getStringExtra("User_Name");
-        txtUser.setText("User: "+ user);
+        txtUser.setText("Notandi: "+ user);
         Screen = (EditText) findViewById(R.id.txtAmount);
 
         btnClick = new ButtonClickListener();
