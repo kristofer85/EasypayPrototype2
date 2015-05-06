@@ -62,6 +62,9 @@
     <string name="del">Del</string>
     <string name="eq">=</string>
     <string name="finish">Ljúka</string>
+    <string name="product_name">Nafn vöru:</string>
+    <string name="product_price">Verð:</string>
+    <string name="add_product">Bæta við vöru</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="amount_products">Vörulisti</string>
