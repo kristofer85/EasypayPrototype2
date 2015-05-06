@@ -56,14 +56,14 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="@string/accept"
         android:id="@+id/btnConfirm"
         android:visibility="visible"
-        android:background="#37A829"
+        android:background="@drawable/buttonBackground"
         android:textSize="20sp"
         android:layout_below="@+id/btn0"
         android:layout_alignStart="@+id/txtAmount"
-        android:layout_alignEnd="@+id/txtAmount" />
+        android:layout_alignEnd="@+id/txtAmount"
+        android:text="@string/accept"/>
 
     <Button
         android:layout_width="85dp"
