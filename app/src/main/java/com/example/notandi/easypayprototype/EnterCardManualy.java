@@ -24,7 +24,7 @@ public class EnterCardManualy extends Activity {
         TextView lblUser = (TextView) findViewById(R.id.lblUser);
         TextView lblAmount = (TextView) findViewById(R.id.lblAmmount);
         lblUser.setText(user);
-        lblAmount.setText(Amount +"Kr");
+        lblAmount.setText(Amount +"ISK");
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
