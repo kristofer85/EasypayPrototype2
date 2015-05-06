@@ -5,7 +5,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.notandi.easypayprototype.ReceiptSent"
-    android:background="@drawable/radialgradientback">
+    android:background="@drawable/radialgradientback"
+    android:id="@+id/">
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,9 +31,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_below="@+id/textView28"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/textView28"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,9 +42,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/receipt"
         android:id="@+id/lblReceiptMsg"
-        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/lblUser"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center" />
+        android:layout_marginTop="73dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,17 +55,19 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/thanks"
         android:id="@+id/textView30"
+        android:layout_marginTop="53dp"
+        android:textSize="30sp"
         android:layout_below="@+id/lblReceiptMsg"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/done"
         android:id="@+id/btnFinalize"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/graybuttonbackground" />
+        android:background="@drawable/graybuttonbackground"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
 
 </RelativeLayout>
