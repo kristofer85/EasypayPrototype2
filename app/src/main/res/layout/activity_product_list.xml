@@ -55,7 +55,7 @@
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/btnAdd"
         android:src="@android:drawable/ic_input_add"
         android:layout_below="@+id/textView16"
         android:layout_toRightOf="@+id/button2"
