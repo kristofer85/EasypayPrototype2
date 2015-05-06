@@ -41,7 +41,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:id="@+id/button2"
+        android:id="@+id/btnConfirmList"
         android:visibility="visible"
         android:background="@drawable/buttonbackground"
         android:textSize="20sp"
@@ -58,6 +58,6 @@
         android:src="@android:drawable/ic_input_add"
         android:clickable="true"
         android:layout_below="@+id/lblAmount2"
-        android:layout_toRightOf="@+id/button2" />
+        android:layout_toRightOf="@+id/btnConfirmList" />
 
 </RelativeLayout>

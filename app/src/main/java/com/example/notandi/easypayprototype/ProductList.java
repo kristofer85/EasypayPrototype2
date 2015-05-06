@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class ProductList extends Activity {
         final String user = getIntent().getStringExtra("User_Name");
         final String Amount = getIntent().getStringExtra("Amount");
         ImageButton btnPlus = (ImageButton) findViewById(R.id.btnAdd);
+        Button btnConfirm = (Button) findViewById(R.id.btnConfirmList);
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
         TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
@@ -29,6 +31,16 @@ public class ProductList extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), AddProduct.class);
+                intent.putExtra("Amount", Amount);
+                intent.putExtra("User_Name", user);
+                startActivityForResult(intent, 0);
+            }
+        });
+
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Amount.class);
                 intent.putExtra("Amount", Amount);
                 intent.putExtra("User_Name", user);
                 startActivityForResult(intent, 0);

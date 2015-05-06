@@ -41,7 +41,7 @@
     <EditText
         android:layout_width="300sp"
         android:layout_height="40sp"
-        android:inputType="number"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/txtProductName"
         android:background="#FFFFFF"
@@ -64,7 +64,7 @@
     <EditText
         android:layout_width="300sp"
         android:layout_height="40sp"
-        android:inputType="number"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/txtProductPrice"
         android:background="#FFFFFF"
