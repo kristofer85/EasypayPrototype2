@@ -54,16 +54,15 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="290dp"
         android:layout_height="50dp"
         android:id="@+id/btnConfirm"
         android:visibility="visible"
-        android:background="@drawable/buttonBackground"
+        android:background="@drawable/buttonbackground"
         android:textSize="20sp"
+        android:text="@string/accept"
         android:layout_below="@+id/btn0"
-        android:layout_alignStart="@+id/txtAmount"
-        android:layout_alignEnd="@+id/txtAmount"
-        android:text="@string/accept"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="85dp"
@@ -74,7 +73,8 @@
         android:textSize="20sp"
         android:layout_below="@+id/txtAmount"
         android:layout_toStartOf="@+id/btn8"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="80dp"
@@ -84,7 +84,8 @@
         android:visibility="visible"
         android:layout_alignTop="@+id/btn7"
         android:layout_toStartOf="@+id/btn9"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -95,7 +96,8 @@
         android:layout_alignEnd="@+id/btn7"
         android:visibility="visible"
         android:layout_alignStart="@+id/btn7"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -106,7 +108,8 @@
         android:layout_alignEnd="@+id/btn4"
         android:visibility="visible"
         android:layout_alignStart="@+id/btn4"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="110dp"
@@ -117,7 +120,8 @@
         android:layout_alignEnd="@+id/btn2"
         android:visibility="visible"
         android:layout_alignStart="@+id/btn1"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="wrap_content"
@@ -128,7 +132,8 @@
         android:layout_alignEnd="@+id/btn8"
         android:layout_alignStart="@+id/btn8"
         android:visibility="visible"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="wrap_content"
@@ -139,7 +144,8 @@
         android:layout_alignEnd="@+id/btn5"
         android:layout_alignStart="@+id/btn5"
         android:visibility="visible"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="80dp"
@@ -149,7 +155,8 @@
         android:visibility="visible"
         android:layout_alignTop="@+id/btn8"
         android:layout_toStartOf="@+id/btnPlus"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -160,7 +167,8 @@
         android:layout_alignEnd="@+id/btn9"
         android:layout_alignStart="@+id/btn9"
         android:visibility="visible"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -171,7 +179,8 @@
         android:layout_alignStart="@+id/btn6"
         android:layout_alignEnd="@+id/btn6"
         android:visibility="visible"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -182,7 +191,8 @@
         android:layout_alignStart="@+id/btn3"
         android:layout_alignEnd="@+id/btn3"
         android:visibility="visible"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -192,7 +202,8 @@
         android:visibility="visible"
         android:layout_alignTop="@+id/btn9"
         android:layout_toStartOf="@+id/btnC"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -204,7 +215,8 @@
         android:layout_toEndOf="@+id/btn6"
         android:visibility="visible"
         android:layout_alignStart="@+id/btnPlus"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -216,7 +228,8 @@
         android:layout_toEndOf="@+id/btn3"
         android:visibility="visible"
         android:layout_alignStart="@+id/btnMinus"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -228,7 +241,8 @@
         android:layout_alignEnd="@+id/btnMult"
         android:layout_toEndOf="@+id/btnNeg"
         android:layout_alignStart="@+id/btnMult"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -238,7 +252,8 @@
         android:visibility="visible"
         android:layout_alignTop="@+id/btnPlus"
         android:layout_alignEnd="@+id/lblUser"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -248,7 +263,8 @@
         android:layout_alignTop="@+id/btnMinus"
         android:layout_alignStart="@+id/btnC"
         android:visibility="visible"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@android:drawable/btn_default" />
 
     <Button
         android:layout_width="50dp"
@@ -258,20 +274,20 @@
         android:textSize="30sp"
         android:visibility="visible"
         android:layout_alignTop="@+id/btnMult"
-        android:layout_alignStart="@+id/btnDel" />
+        android:layout_alignStart="@+id/btnDel"
+        android:background="@android:drawable/btn_default" />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="440sp"
+        android:layout_height="80dp"
         android:text="@string/amount_products"
         android:id="@+id/button"
         android:visibility="visible"
-        android:background="#ff878787"
         android:textSize="20sp"
+        android:clickable="false"
+        android:background="@drawable/graybuttonbackground"
         android:layout_below="@+id/btnConfirm"
-        android:layout_alignStart="@+id/btnConfirm"
-        android:layout_alignEnd="@+id/btnConfirm"
-        android:layout_marginTop="10dp"
-        android:clickable="false" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-10dp" />
 
 </RelativeLayout>

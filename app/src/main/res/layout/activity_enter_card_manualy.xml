@@ -86,7 +86,7 @@
         android:layout_height="50dp"
         android:id="@+id/btnConfirm"
         android:visibility="visible"
-        android:background="@drawable/buttonBackground"
+        android:background="@drawable/buttonbackground"
         android:textSize="20sp"
         android:text="@string/accept"
         android:layout_below="@+id/txtExpDate"

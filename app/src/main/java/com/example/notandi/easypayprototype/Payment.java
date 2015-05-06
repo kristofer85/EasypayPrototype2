@@ -23,7 +23,7 @@ public class Payment extends Activity {
         TextView txtAmount = (TextView) findViewById(R.id.lblPaymentAmount);
         final String user = getIntent().getStringExtra("User_Name");
         final String Amount = getIntent().getStringExtra("Amount");
-        txtUser.setText("Notandi: "+ user);
+        txtUser.setText(user);
         txtAmount.setText("Viðskipti ISK. " + Amount);
         ImageButton ContactlessCard = (ImageButton) findViewById(R.id.Card);
         ContactlessCard.setOnClickListener(new View.OnClickListener() {

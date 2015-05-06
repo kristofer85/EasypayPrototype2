@@ -61,7 +61,7 @@
         android:layout_below="@+id/txtPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:background="@drawable/buttonBackground"
+        android:background="@drawable/buttonbackground"
         android:textSize="20sp" />
 
     <TextView
@@ -125,7 +125,7 @@
         android:layout_below="@+id/txtEmail"
         android:layout_alignStart="@+id/btnSendSMS"
         android:layout_marginTop="5dp"
-        android:background="@drawable/buttonBackground"
+        android:background="@drawable/buttonbackground"
         android:textSize="20sp" />
 
     <TextView

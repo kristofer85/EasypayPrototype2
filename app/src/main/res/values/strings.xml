@@ -20,8 +20,7 @@
     <string name="active">Gildistími:</string>
     <string name="cvs">CVS:</string>
     <string name="card_symbol">Card symbol picture</string>
-    <string name="pay">Legðu kortið upp að símanum til þess að greiða</string>
-    <string name="enter_cardnumber">Smeltu á hnappin til þess að slá inn kortanúmer</string>
+    <string name="pay">Leggðu kortið upp að bakhlið símans til þess að greiða</string>
     <string name="insert_cardnumber">Setja inn Kortanúmer</string>
     <string name="confirmed">Heimilað</string>
     <string name="info_rvk">101 Reykjavík</string>
