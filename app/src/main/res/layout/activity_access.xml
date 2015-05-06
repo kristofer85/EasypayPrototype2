@@ -41,7 +41,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:id="@+id/btnConfirm"
+        android:id="@+id/btnAccess"
         android:visibility="visible"
         android:background="@drawable/buttonbackground"
         android:textSize="20sp"
