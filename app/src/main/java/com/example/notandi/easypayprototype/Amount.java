@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -27,11 +28,14 @@ public class Amount extends Activity
         setContentView(R.layout.activity_amount);
         TextView txtUser = (TextView) findViewById(R.id.lblUser);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
+        Button btnProduct = (Button) findViewById(R.id.buttonProduct);
         final String user = getIntent().getStringExtra("User_Name");
         txtUser.setText(user);
         Screen = (EditText) findViewById(R.id.txtAmount);
 
         btnClick = new ButtonClickListener();
+
+
         final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnNeg};
 
         for( int id:idList)
@@ -41,10 +45,8 @@ public class Amount extends Activity
         }
         Screen.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                for( int id:idList)
-                {
+            public void onClick(View v) {
+                for (int id : idList) {
                     View V = (View) findViewById(id);
                     V.setVisibility(View.VISIBLE);
                 }
@@ -53,14 +55,12 @@ public class Amount extends Activity
 
         Screen.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after)
-            {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count)
-            {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
 
                 Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
 
@@ -84,6 +84,19 @@ public class Amount extends Activity
                 startActivityForResult(intent, 0);
             }
         });
+
+        btnProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                String pay = Screen.getText().toString();
+                Intent intent = new Intent(v.getContext(), ProductList.class);
+                intent.putExtra("Amount", pay);
+                intent.putExtra("User_Name", user);
+                startActivityForResult(intent, 0);
+            }
+        });
+
     }
 
 

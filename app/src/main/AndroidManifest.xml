@@ -40,6 +40,12 @@
             android:name=".ReceiptSent"
             android:label="@string/title_activity_receipt_sent" >
         </activity>
+        <activity
+            android:name=".ProductList"
+            android:label="ProductList" >
+        </activity>
+        <activity android:name=".AddProduct"
+            android:label="AddProduct" >
+        </activity>
     </application>
-
 </manifest>
