@@ -22,7 +22,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/textView3"
         android:layout_marginBottom="10dp"
         android:layout_alignParentEnd="true"
@@ -36,10 +35,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/title_activity_amount"
         android:id="@+id/lblAmount"
-        android:layout_marginTop="90dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignEnd="@+id/txtAmount"
-        android:layout_alignStart="@+id/txtAmount" />
+        android:layout_below="@+id/lblUser"
+        android:layout_alignStart="@+id/txtAmount"
+        android:layout_marginTop="-5dp" />
 
     <EditText
         android:layout_width="320dp"
@@ -64,7 +62,8 @@
         android:background="#37A829"
         android:textSize="20sp"
         android:layout_below="@+id/btn0"
-        android:layout_alignStart="@+id/txtAmount" />
+        android:layout_alignStart="@+id/txtAmount"
+        android:layout_alignEnd="@+id/txtAmount" />
 
     <Button
         android:layout_width="85dp"
@@ -72,9 +71,10 @@
         android:text="@string/seven"
         android:id="@+id/btn7"
         android:visibility="visible"
-        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtAmount"
         android:layout_toStartOf="@+id/btn8"
-        android:textSize="20sp" />
+        android:layout_marginTop="5dp" />
 
     <Button
         android:layout_width="80dp"
@@ -259,5 +259,19 @@
         android:visibility="visible"
         android:layout_alignTop="@+id/btnMult"
         android:layout_alignStart="@+id/btnDel" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/amount_products"
+        android:id="@+id/button"
+        android:visibility="visible"
+        android:background="#ff878787"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnConfirm"
+        android:layout_alignStart="@+id/btnConfirm"
+        android:layout_alignEnd="@+id/btnConfirm"
+        android:layout_marginTop="10dp"
+        android:clickable="false" />
 
 </RelativeLayout>
