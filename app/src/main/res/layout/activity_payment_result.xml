@@ -122,22 +122,29 @@
         android:layout_toStartOf="@+id/textView17" />
 
     <Button
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:text="@string/no"
         android:id="@+id/btnReceiptNo"
         android:textSize="30sp"
         android:layout_alignTop="@+id/btnReceiptYes"
-        android:layout_toEndOf="@+id/textView17" />
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/graybuttonbackground"
+        android:layout_marginLeft="-15dp" />
 
     <Button
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:text="@string/yes"
         android:id="@+id/btnReceiptYes"
         android:textSize="30sp"
-        android:layout_alignTop="@+id/textView22"
-        android:layout_alignEnd="@+id/textView2" />
+        android:background="@drawable/graybuttonbackground"
+        android:layout_below="@+id/lblChargedAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="-10dp" />
 
     <TextView
         android:layout_width="wrap_content"
