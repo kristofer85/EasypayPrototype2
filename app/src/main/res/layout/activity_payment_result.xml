@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/info_visa"
         android:textColor="#000000"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:id="@+id/textView2"
         android:textIsSelectable="false"
         android:layout_below="@+id/textView12"
@@ -106,7 +106,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/amount"
         android:id="@+id/lblChargedAmount"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:layout_above="@+id/textView22"
         android:layout_alignStart="@+id/lblDate"
         android:layout_marginBottom="10dp" />
