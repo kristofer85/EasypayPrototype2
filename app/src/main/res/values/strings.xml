@@ -13,7 +13,7 @@
     <string name="title_activity_receipt">Receipt</string>
     <string name="title_activity_receipt_sent">ReceiptSent</string>
     <string name="accept">Samþykkja</string>
-    <string name="user">Notandi: Fyrirtæki ehf</string>
+    <string name="user">Fyrirtæki ehf</string>
     <string name="welcome">Velkomin!</string>
     <string name="amount">Viðskipti ISK.</string>
     <string name="card_number">Kortanúmer:</string>
@@ -64,4 +64,5 @@
     <string name="eq">=</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="amount_products">Vörulisti</string>
 </resources>
