@@ -22,14 +22,14 @@ public class ReceiptSent extends Activity {
         final String user = getIntent().getStringExtra("User_Name");
         final String ReceiptType = getIntent().getStringExtra("ReceiptType");
         final String ReceiptValue = getIntent().getStringExtra("ReceiptValue");
-        lblUser.setText("User: "+ user);
+        lblUser.setText(user);
         if(ReceiptType.equals("SMS"))
         {
-            lblReceiptMsg.setText("the receipt has been sent by SMS to the number :"+ ReceiptValue);
+            lblReceiptMsg.setText("Kvittun hefur verið send á símanúmerið: "+ ReceiptValue);
         }
         else if(ReceiptType.equals("Email"))
         {
-            lblReceiptMsg.setText("the receipt has been sent to the Email :"+ ReceiptValue);
+            lblReceiptMsg.setText("Kvittun hefur verið send á netfangið: "+ ReceiptValue);
         }
         btnFinalize.setOnClickListener(new View.OnClickListener() {
             @Override
