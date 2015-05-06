@@ -28,7 +28,7 @@ public class Amount extends Activity
         TextView txtUser = (TextView) findViewById(R.id.lblUser);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
         final String user = getIntent().getStringExtra("User_Name");
-        txtUser.setText("Notandi: "+ user);
+        txtUser.setText(user);
         Screen = (EditText) findViewById(R.id.txtAmount);
 
         btnClick = new ButtonClickListener();
@@ -61,10 +61,9 @@ public class Amount extends Activity
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count)
             {
-                TextView welcomeTxt = (TextView) findViewById(R.id.welcomeTxt);
+
                 Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
 
-                welcomeTxt.setVisibility(View.GONE);
                 btnConfirm.setVisibility(View.VISIBLE);
             }
 

@@ -22,19 +22,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/lblAmount" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/welcome"
-        android:id="@+id/welcomeTxt"
-        android:textSize="30sp"
-        android:layout_below="@+id/lblUser"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,23 +36,24 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/title_activity_amount"
         android:id="@+id/lblAmount"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/textView3" />
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/txtAmount"
+        android:layout_alignStart="@+id/txtAmount" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:inputType="none"
         android:ems="10"
         android:id="@+id/txtAmount"
         android:background="#FFFFFF"
         android:textColor="#000000"
-        android:layout_below="@+id/lblAmount"
-        android:layout_centerHorizontal="true"
         android:clickable="true"
         android:editable="false"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_below="@+id/lblAmount"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200dp"
@@ -67,8 +62,9 @@
         android:id="@+id/btnConfirm"
         android:visibility="visible"
         android:background="#37A829"
+        android:textSize="20sp"
         android:layout_below="@+id/btn0"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/txtAmount" />
 
     <Button
         android:layout_width="85dp"
@@ -77,7 +73,8 @@
         android:id="@+id/btn7"
         android:visibility="visible"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/btn8" />
+        android:layout_toStartOf="@+id/btn8"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="80dp"
@@ -86,7 +83,8 @@
         android:id="@+id/btn8"
         android:visibility="visible"
         android:layout_alignTop="@+id/btn7"
-        android:layout_toStartOf="@+id/btn9" />
+        android:layout_toStartOf="@+id/btn9"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -96,7 +94,8 @@
         android:layout_below="@+id/btn7"
         android:layout_alignEnd="@+id/btn7"
         android:visibility="visible"
-        android:layout_alignStart="@+id/btn7" />
+        android:layout_alignStart="@+id/btn7"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -106,7 +105,8 @@
         android:layout_below="@+id/btn4"
         android:layout_alignEnd="@+id/btn4"
         android:visibility="visible"
-        android:layout_alignStart="@+id/btn4" />
+        android:layout_alignStart="@+id/btn4"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="110dp"
@@ -116,7 +116,8 @@
         android:layout_below="@+id/btn1"
         android:layout_alignEnd="@+id/btn2"
         android:visibility="visible"
-        android:layout_alignStart="@+id/btn1" />
+        android:layout_alignStart="@+id/btn1"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -126,7 +127,8 @@
         android:layout_alignTop="@+id/btn4"
         android:layout_alignEnd="@+id/btn8"
         android:layout_alignStart="@+id/btn8"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -136,7 +138,8 @@
         android:layout_alignTop="@+id/btn1"
         android:layout_alignEnd="@+id/btn5"
         android:layout_alignStart="@+id/btn5"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="80dp"
@@ -145,7 +148,8 @@
         android:id="@+id/btn9"
         android:visibility="visible"
         android:layout_alignTop="@+id/btn8"
-        android:layout_toStartOf="@+id/btnPlus" />
+        android:layout_toStartOf="@+id/btnPlus"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -155,7 +159,8 @@
         android:layout_alignTop="@+id/btn5"
         android:layout_alignEnd="@+id/btn9"
         android:layout_alignStart="@+id/btn9"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -165,7 +170,8 @@
         android:layout_alignTop="@+id/btn2"
         android:layout_alignStart="@+id/btn6"
         android:layout_alignEnd="@+id/btn6"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -175,7 +181,8 @@
         android:layout_alignTop="@+id/btn0"
         android:layout_alignStart="@+id/btn3"
         android:layout_alignEnd="@+id/btn3"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -184,7 +191,8 @@
         android:id="@+id/btnPlus"
         android:visibility="visible"
         android:layout_alignTop="@+id/btn9"
-        android:layout_toStartOf="@+id/btnC" />
+        android:layout_toStartOf="@+id/btnC"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -195,7 +203,8 @@
         android:layout_alignEnd="@+id/btnPlus"
         android:layout_toEndOf="@+id/btn6"
         android:visibility="visible"
-        android:layout_alignStart="@+id/btnPlus" />
+        android:layout_alignStart="@+id/btnPlus"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -206,7 +215,8 @@
         android:layout_alignEnd="@+id/btnMinus"
         android:layout_toEndOf="@+id/btn3"
         android:visibility="visible"
-        android:layout_alignStart="@+id/btnMinus" />
+        android:layout_alignStart="@+id/btnMinus"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -217,7 +227,8 @@
         android:layout_alignTop="@+id/btnNeg"
         android:layout_alignEnd="@+id/btnMult"
         android:layout_toEndOf="@+id/btnNeg"
-        android:layout_alignStart="@+id/btnMult" />
+        android:layout_alignStart="@+id/btnMult"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -226,7 +237,8 @@
         android:id="@+id/btnC"
         android:visibility="visible"
         android:layout_alignTop="@+id/btnPlus"
-        android:layout_alignEnd="@+id/lblUser" />
+        android:layout_alignEnd="@+id/lblUser"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="50dp"
@@ -235,7 +247,8 @@
         android:id="@+id/btnDel"
         android:layout_alignTop="@+id/btnMinus"
         android:layout_alignStart="@+id/btnC"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="50dp"
