@@ -54,14 +54,14 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="@string/accept"
         android:id="@+id/btnSendSMS"
         android:visibility="visible"
         android:layout_below="@+id/txtPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:background="#37A829"
+        android:background="@drawable/buttonBackground"
         android:textSize="20sp" />
 
     <TextView
@@ -125,7 +125,7 @@
         android:layout_below="@+id/txtEmail"
         android:layout_alignStart="@+id/btnSendSMS"
         android:layout_marginTop="5dp"
-        android:background="#37A829"
+        android:background="@drawable/buttonBackground"
         android:textSize="20sp" />
 
     <TextView
