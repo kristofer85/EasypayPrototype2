@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by erla on 06/05/15.
@@ -35,6 +36,7 @@ public class AddProduct extends Activity {
                 EditText txtNewProductPrice = (EditText) findViewById(R.id.txtProductPrice);
                 String Name = txtNewProduct.getText().toString();
                 String Price = txtNewProductPrice.getText().toString();
+                Toast.makeText(getApplicationContext(), "Vöru hefur verið bætt í listann", Toast.LENGTH_LONG).show();
                 startActivityForResult(intent, 0);
             }
         });
