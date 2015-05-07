@@ -57,7 +57,7 @@
         android:id="@+id/btnAdd"
         android:src="@android:drawable/ic_input_add"
         android:clickable="true"
-        android:layout_below="@+id/lblAmount2"
-        android:layout_toRightOf="@+id/btnConfirmList" />
+        android:layout_alignTop="@+id/lblAmount2"
+        android:layout_toEndOf="@+id/btnConfirmList" />
 
 </RelativeLayout>
