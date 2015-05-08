@@ -39,6 +39,9 @@ public class ProductList extends Activity {
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
         final TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
+        if(Amount.isEmpty()) {
+            Amount = "0";
+        }
         lblAmount.setText("Viðskipti ISK. " + Amount);
 
         mList.add(new ProductRecord("Blái Naglinn", 1000));
