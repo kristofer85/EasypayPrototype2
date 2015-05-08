@@ -6,14 +6,27 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by erla on 06/05/15.
  */
 public class ProductList extends Activity {
+
+    List<ProductRecord> mList = new ArrayList();
+    GridView mGridView;
+    TextView mTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +39,55 @@ public class ProductList extends Activity {
         TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
         lblAmount.setText("Viðskipti ISK. " + Amount);
+
+        mList.add(new ProductRecord("Blái Naglinn", 1000));
+        mList.add(new ProductRecord("WC Pappír", 2500));
+        mList.add(new ProductRecord("Eldhúsrúllur", 3000));
+        mList.add(new ProductRecord("Neyðarkall", 1000));
+        mList.add(new ProductRecord("Annað", 10000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+        mList.add(new ProductRecord("Annað", 10000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+        mList.add(new ProductRecord("Annað", 30000));
+        mList.add(new ProductRecord("Enn Annað", 40000));
+        mList.add(new ProductRecord("Annað", 10000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+        mList.add(new ProductRecord("Enn Annað", 20000));
+
+        mGridView = (GridView) findViewById(R.id.products);
+        mTextView = (TextView) findViewById(R.id.total);
+
+        ArrayAdapter<ProductRecord> adapter = new ArrayAdapter<ProductRecord>(this, R.layout.activity_grid_cell, android.R.id.text1, mList) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView text1 = (TextView) view.findViewById(android.R.id.text1);
+                TextView text2 = (TextView) view.findViewById(android.R.id.text2);
+                ProductRecord record = mList.get(position);
+                text1.setText(record.getName());
+                text2.setText(Integer.toString(record.getPrice()) + " ISK");
+                return view;
+            }
+        };
+
+        mGridView.setAdapter(adapter);
+
+        mGridView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        ProductRecord record = mList.get(position);
+                        String text = mTextView.getText().toString();
+                        Integer total = Integer.parseInt(text);
+                        total = total + record.getPrice();
+                        mTextView.setText(total.toString());
+                        Toast.makeText(getApplicationContext(), record.getName() + " bætt við heildarverð", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+        );
 
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
