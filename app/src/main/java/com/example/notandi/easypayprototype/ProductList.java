@@ -26,17 +26,18 @@ public class ProductList extends Activity {
     List<ProductRecord> mList = new ArrayList();
     GridView mGridView;
     TextView mTextView;
+    String Amount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
         final String user = getIntent().getStringExtra("User_Name");
-        final String Amount = getIntent().getStringExtra("Amount");
+        Amount = getIntent().getStringExtra("Amount");
         ImageButton btnPlus = (ImageButton) findViewById(R.id.btnAdd);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirmList);
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
-        TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
+        final TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
         lblAmount.setText("Viðskipti ISK. " + Amount);
 
@@ -57,7 +58,6 @@ public class ProductList extends Activity {
         mList.add(new ProductRecord("Enn Annað", 20000));
 
         mGridView = (GridView) findViewById(R.id.products);
-        mTextView = (TextView) findViewById(R.id.total);
 
         ArrayAdapter<ProductRecord> adapter = new ArrayAdapter<ProductRecord>(this, R.layout.activity_grid_cell, android.R.id.text1, mList) {
             @Override
@@ -79,12 +79,11 @@ public class ProductList extends Activity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         ProductRecord record = mList.get(position);
-                        String text = mTextView.getText().toString();
-                        Integer total = Integer.parseInt(text);
+                        Integer total = Integer.parseInt(Amount);
                         total = total + record.getPrice();
-                        mTextView.setText(total.toString());
+                        lblAmount.setText("Viðskipti ISK. " + total.toString());
+                        Amount = total.toString();
                         Toast.makeText(getApplicationContext(), record.getName() + " bætt við heildarverð", Toast.LENGTH_SHORT).show();
-
                     }
                 }
         );
