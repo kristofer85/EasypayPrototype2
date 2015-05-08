@@ -16,6 +16,8 @@ import android.widget.Toast;
  * Created by erla on 06/05/15.
  */
 public class AddProduct extends Activity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +36,10 @@ public class AddProduct extends Activity {
                 intent.putExtra("Amount", Amount);
                 EditText txtNewProduct = (EditText) findViewById(R.id.txtProductName);
                 EditText txtNewProductPrice = (EditText) findViewById(R.id.txtProductPrice);
-                String Name = txtNewProduct.getText().toString();
-                String Price = txtNewProductPrice.getText().toString();
+                String name = txtNewProduct.getText().toString();
+                String price = txtNewProductPrice.getText().toString();
+                int temp = Integer.parseInt(price);
+                ProductList.mList.add(new ProductRecord(name, Integer.parseInt(price)));
                 Toast.makeText(getApplicationContext(), "Vöru hefur verið bætt í listann", Toast.LENGTH_LONG).show();
                 startActivityForResult(intent, 0);
             }

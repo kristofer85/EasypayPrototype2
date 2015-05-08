@@ -21,9 +21,11 @@ import java.util.List;
 /**
  * Created by erla on 06/05/15.
  */
+
+
 public class ProductList extends Activity {
 
-    List<ProductRecord> mList = new ArrayList();
+    public static List<ProductRecord> mList = new ArrayList();
     GridView mGridView;
     TextView mTextView;
     String Amount;
@@ -50,15 +52,7 @@ public class ProductList extends Activity {
         mList.add(new ProductRecord("Neyðarkall", 1000));
         mList.add(new ProductRecord("Annað", 10000));
         mList.add(new ProductRecord("Enn Annað", 20000));
-        mList.add(new ProductRecord("Annað", 10000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
-        mList.add(new ProductRecord("Annað", 30000));
-        mList.add(new ProductRecord("Enn Annað", 40000));
-        mList.add(new ProductRecord("Annað", 10000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
+
 
         mGridView = (GridView) findViewById(R.id.products);
 
