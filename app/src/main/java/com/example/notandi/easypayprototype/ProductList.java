@@ -38,6 +38,7 @@ public class ProductList extends Activity {
         Amount = getIntent().getStringExtra("Amount");
         ImageButton btnPlus = (ImageButton) findViewById(R.id.btnAdd);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirmList);
+        //Button btnProductDelete = (Button) findViewById(R.id.btnDelete);
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
         final TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
@@ -104,6 +105,9 @@ public class ProductList extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
+
+
+
     }
 
     @Override

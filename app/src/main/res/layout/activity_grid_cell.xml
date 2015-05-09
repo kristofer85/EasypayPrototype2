@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="170dp"
+    android:layout_width="150dp"
     android:layout_height="110dp"
     android:layout_margin="10dip"
     android:paddingTop="2dip"
@@ -17,14 +17,18 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_marginTop="50dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:id="@+id/button"
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
         android:layout_marginLeft="-25dp"
-        android:background="@android:drawable/ic_delete"
-        android:layout_marginTop="-5dp" />
+        android:textIsSelectable="false"
+        android:clickable="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="-4dp" />
 
     <TextView android:id="@android:id/text1"
         android:layout_width="match_parent"
