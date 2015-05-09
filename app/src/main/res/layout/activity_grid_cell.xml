@@ -28,7 +28,8 @@
         android:clickable="true"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="-4dp" />
+        android:layout_marginTop="-4dp"
+        android:id="@+id/deleteProduct" />
 
     <TextView android:id="@android:id/text1"
         android:layout_width="match_parent"
