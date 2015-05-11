@@ -44,8 +44,14 @@
             android:name=".ProductList"
             android:label="ProductList" >
         </activity>
-        <activity android:name=".AddProduct"
+        <activity
+            android:name=".AddProduct"
             android:label="AddProduct" >
         </activity>
+        <activity
+            android:name=".start"
+            android:label="@string/title_activity_start" >
+        </activity>
     </application>
+
 </manifest>
