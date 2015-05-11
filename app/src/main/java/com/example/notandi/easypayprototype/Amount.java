@@ -35,7 +35,7 @@ public class Amount extends Activity
         Screen = (EditText) findViewById(R.id.txtAmount);
         if(vara == true)
         {
-            final String Amount = getIntent().getStringExtra("Amount");
+            String Amount = getIntent().getStringExtra("Amount");
             Screen.setText(Amount);
             numberBfr = Float.parseFloat(Amount);
         }
@@ -86,7 +86,6 @@ public class Amount extends Activity
                 String ScreenEqat = Screen.getText().toString();
                 int temp = Calc.calculate(ScreenEqat);
                 Screen.setText(String.valueOf(temp));
-                Screen.setText(String.valueOf(numberBfr));
                 String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), Payment.class);
                 intent.putExtra("Amount", pay);
