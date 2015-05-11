@@ -1,10 +1,14 @@
 package com.example.notandi.easypayprototype;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -29,6 +33,7 @@ public class ProductList extends Activity {
     GridView mGridView;
     TextView mTextView;
     String Amount;
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,9 +110,6 @@ public class ProductList extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
-
-
-
 
     }
 
