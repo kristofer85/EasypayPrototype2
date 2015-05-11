@@ -83,7 +83,9 @@ public class Amount extends Activity
             @Override
             public void onClick(View v)
             {
-                CalcNr(operator);
+                String ScreenEqat = Screen.getText().toString();
+                int temp = Calc.calculate(ScreenEqat);
+                Screen.setText(String.valueOf(temp));
                 Screen.setText(String.valueOf(numberBfr));
                 String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), Payment.class);

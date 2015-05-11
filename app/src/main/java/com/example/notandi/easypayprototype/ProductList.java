@@ -30,10 +30,13 @@ import java.util.List;
 public class ProductList extends Activity {
 
     public static List<ProductRecord> mList = new ArrayList();
+    public static int tagIncrementer = 1;
+
     GridView mGridView;
     TextView mTextView;
     String Amount;
     final Context context = this;
+    ArrayAdapter<ProductRecord> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,6 @@ public class ProductList extends Activity {
         ImageButton btnPlus = (ImageButton) findViewById(R.id.btnAdd);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirmList);
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
-        TextView delProd = (TextView) findViewById(R.id.deleteProduct);
         final TextView lblAmount = (TextView) findViewById(R.id.lblAmount2);
         lblUser.setText(user);
         if(Amount.isEmpty()) {
@@ -52,6 +54,7 @@ public class ProductList extends Activity {
         }
         lblAmount.setText("Viðskipti ISK. " + Amount);
 
+        //TextView btnDelete = (TextView) findViewById(R.id.deleteProduct);
         mList.add(new ProductRecord("Blái Naglinn", 1000));
         mList.add(new ProductRecord("WC Pappír", 2500));
         mList.add(new ProductRecord("Eldhúsrúllur", 3000));
@@ -62,15 +65,29 @@ public class ProductList extends Activity {
 
         mGridView = (GridView) findViewById(R.id.products);
 
-        ArrayAdapter<ProductRecord> adapter = new ArrayAdapter<ProductRecord>(this, R.layout.activity_grid_cell, android.R.id.text1, mList) {
+        this.adapter = new ArrayAdapter<ProductRecord>(this, R.layout.activity_grid_cell, android.R.id.text1, mList) {
             @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
+            public View getView(final int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
                 TextView text1 = (TextView) view.findViewById(android.R.id.text1);
                 TextView text2 = (TextView) view.findViewById(android.R.id.text2);
+                TextView btnDelete = (TextView) view.findViewById(R.id.deleteProduct);
                 ProductRecord record = mList.get(position);
                 text1.setText(record.getName());
                 text2.setText(Integer.toString(record.getPrice()) + " ISK");
+                btnDelete.setTag(ProductList.tagIncrementer);
+                ProductList.tagIncrementer++;
+
+                btnDelete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mList.remove(position);
+                        ProductList.this.adapter.notifyDataSetChanged();
+                    }
+                });
+
+
+
                 return view;
             }
         };
@@ -90,6 +107,7 @@ public class ProductList extends Activity {
                     }
                 }
         );
+
 
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +131,8 @@ public class ProductList extends Activity {
         });
 
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

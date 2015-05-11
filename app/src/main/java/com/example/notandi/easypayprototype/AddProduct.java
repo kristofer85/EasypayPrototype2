@@ -39,7 +39,12 @@ public class AddProduct extends Activity {
                 String name = txtNewProduct.getText().toString();
                 String price = txtNewProductPrice.getText().toString();
                 int temp = Integer.parseInt(price);
+
                 ProductList.mList.add(new ProductRecord(name, Integer.parseInt(price)));
+                TextView btnDelete = new TextView(getApplicationContext());
+                btnDelete.setTag(ProductList.tagIncrementer);
+                ProductList.tagIncrementer++;
+
                 Toast.makeText(getApplicationContext(), "Vöru hefur verið bætt í listann", Toast.LENGTH_LONG).show();
                 startActivityForResult(intent, 0);
             }
