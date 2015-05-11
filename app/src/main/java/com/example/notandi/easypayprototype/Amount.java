@@ -10,12 +10,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 
 public class Amount extends Activity
 {
+    private Calc Sum;
     private EditText Screen;
     private float numberBfr;
     private float numberAtr;
@@ -30,9 +30,15 @@ public class Amount extends Activity
         Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
         Button btnProduct = (Button) findViewById(R.id.buttonProduct);
         final String user = getIntent().getStringExtra("User_Name");
+        boolean vara =  getIntent().getBooleanExtra("vorulisti", false);
         txtUser.setText(user);
         Screen = (EditText) findViewById(R.id.txtAmount);
-
+        if(vara == true)
+        {
+            final String Amount = getIntent().getStringExtra("Amount");
+            Screen.setText(Amount);
+            numberBfr = Float.parseFloat(Amount);
+        }
         btnClick = new ButtonClickListener();
 
 
@@ -77,6 +83,8 @@ public class Amount extends Activity
             @Override
             public void onClick(View v)
             {
+                CalcNr(operator);
+                Screen.setText(String.valueOf(numberBfr));
                 String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), Payment.class);
                 intent.putExtra("Amount", pay);
@@ -181,13 +189,23 @@ public class Amount extends Activity
                     operator = ' ';
                     break;
                 case R.id.btnDel:
-                    //to do impement backspace function for undo
+                    String str = Screen.getText().toString();
+                    if (str.length() > 0 && str.charAt(str.length()-1)=='x') {
+                        str = str.substring(0, str.length()-1);
+                    }
+                    Screen.setText(str);
                     break;
                 case R.id.btnEquals:
+                    /*
                     CalcNr(operator);
                     Screen.setText(String.valueOf(numberBfr));
                     oper = false;
+                    */
+                    String ScreenEqat = Screen.getText().toString();
+                    int temp = Calc.calculate(ScreenEqat);
+                    Screen.setText(String.valueOf(temp));
                     break;
+                /*
                 case R.id.btnPlus:
                     CalcNr(operator);
                     Screen.setText("");
@@ -218,6 +236,7 @@ public class Amount extends Activity
                     numberAtr *= -1.0f;
                     Screen.setText(String.valueOf(numberAtr));
                     break;
+                    */
                 default:
                     String numb = ((Button) V).getText().toString();
                     String ScreenNr = Screen.getText().toString();
@@ -228,7 +247,7 @@ public class Amount extends Activity
                     else
                     {
                         ScreenNr = ScreenNr + numb;
-                        numberAtr = Float.parseFloat(ScreenNr);
+                        //numberAtr = Float.parseFloat(ScreenNr);
                         Screen.setText(ScreenNr);
                     }
 
