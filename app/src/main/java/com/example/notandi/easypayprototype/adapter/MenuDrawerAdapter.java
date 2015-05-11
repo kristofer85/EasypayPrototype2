@@ -1,28 +1,28 @@
-package com.example.notandi.easypayprototype;
-/*
+package com.example.notandi.easypayprototype.adapter;
+
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.github.devnied.emvnfccard.EmvApplication;
-import com.github.devnied.emvnfccard.R;
-import com.github.devnied.emvnfccard.utils.ViewHolder;
-import com.github.devnied.emvnfccard.utils.ViewUtils;
+import com.example.notandi.easypayprototype.EmvApplication;
+//import com.github.devnied.emvnfccard.R;
+import com.example.notandi.easypayprototype.R;
+import com.example.notandi.easypayprototype.utils.ViewHolder;
+import com.example.notandi.easypayprototype.utils.ViewUtils;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-*/
+
 
 public class MenuDrawerAdapter /* extends BaseAdapter */
 {
-/*
+
     public List<Entry<Integer, String>> mData = new ArrayList<Map.Entry<Integer, String>>(3);
 
     private Context mContext;
@@ -37,22 +37,22 @@ public class MenuDrawerAdapter /* extends BaseAdapter */
                 .getStringArray(R.array.navigation_items)[2]));
     }
 
-    @Override
+    //@Override
     public int getCount() {
         return mData.size();
     }
 
-    @Override
+    //@Override
     public Object getItem(final int position) {
         return mData.get(position);
     }
 
-    @Override
+    //@Override
     public long getItemId(final int position) {
         return position;
     }
 
-    @Override
+    //@Override
     public View getView(final int position, final View convertView, final ViewGroup parent) {
         View v = convertView;
         if (v == null) {
@@ -74,5 +74,5 @@ public class MenuDrawerAdapter /* extends BaseAdapter */
 
         return v;
     }
-*/
+
 }

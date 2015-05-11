@@ -47,5 +47,8 @@
         <activity android:name=".AddProduct"
             android:label="AddProduct" >
         </activity>
+        <activity android:name=".HomeActivity"
+            android:label="HomeActivity" >
+        </activity>
     </application>
 </manifest>

@@ -86,10 +86,11 @@ public class Amount extends Activity
                 CalcNr(operator);
                 Screen.setText(String.valueOf(numberBfr));
                 String pay = Screen.getText().toString();
-                Intent intent = new Intent(v.getContext(), Payment.class);
+                Intent intent = new Intent(Amount.this, HomeActivity.class);
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
-                startActivityForResult(intent, 0);
+                //startActivityForResult(intent, 0);
+                startActivity(intent);
             }
         });
 
