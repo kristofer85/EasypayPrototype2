@@ -12,6 +12,8 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.notandi.easypayprototype.adapter.MenuDrawerAdapter;
@@ -113,12 +115,15 @@ public class HomeActivity extends FragmentActivity
      * Last Ats
      */
     private byte[] lastAts;
-
+    public String user;
+    public String Amount;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_home_activity);
+        user = getIntent().getStringExtra("User_Name");
+        Amount = getIntent().getStringExtra("Amount");
 
         // init NfcUtils
         mNfcUtils = new NFCUtils(this);
@@ -126,7 +131,17 @@ public class HomeActivity extends FragmentActivity
 
 
 
-
+        Button btnManualCard = (Button) findViewById(R.id.btnManualCard2);
+        btnManualCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(v.getContext(), EnterCardManualy.class);
+                intent.putExtra("Amount", Amount);
+                intent.putExtra("Address", "Strandgata 1337");
+                startActivityForResult(intent, 0);
+            }
+        });
         // Read card on launch
         if (getIntent().getAction() == NfcAdapter.ACTION_TECH_DISCOVERED) {
             onNewIntent(getIntent());
@@ -139,7 +154,8 @@ public class HomeActivity extends FragmentActivity
 
     @Override
     protected void onResume() {
-        mNfcUtils.enableDispatch();
+        //mNfcUtils.enableDispatch();
+
         super.onResume();
     }
 
@@ -235,6 +251,12 @@ public class HomeActivity extends FragmentActivity
                             {
                                 String test = mCard.getCardNumber();
                                 String test2 = mCard.getExpireDate().toString();
+                                Intent intent = new Intent(HomeActivity.this, PaymentResult.class);
+                                intent.putExtra("User_Name", user);
+                                intent.putExtra("Amount", Amount);
+                                intent.putExtra("Address", "Strandgata 1337");
+                                intent.putExtra("PaymentConfirmed", true);
+                                startActivity(intent);
                                 mReadCard = mCard;
                             }
                         }
