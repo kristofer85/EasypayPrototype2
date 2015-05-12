@@ -54,15 +54,6 @@ public class ProductList extends Activity {
         }
         lblAmount.setText("Viðskipti ISK. " + Amount);
 
-        //TextView btnDelete = (TextView) findViewById(R.id.deleteProduct);
-        mList.add(new ProductRecord("Blái Naglinn", 1000));
-        mList.add(new ProductRecord("WC Pappír", 2500));
-        mList.add(new ProductRecord("Eldhúsrúllur", 3000));
-        mList.add(new ProductRecord("Neyðarkall", 1000));
-        mList.add(new ProductRecord("Annað", 10000));
-        mList.add(new ProductRecord("Enn Annað", 20000));
-
-
         mGridView = (GridView) findViewById(R.id.products);
 
         this.adapter = new ArrayAdapter<ProductRecord>(this, R.layout.activity_grid_cell, android.R.id.text1, mList) {
