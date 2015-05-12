@@ -83,6 +83,8 @@ public class ProductList extends Activity {
                     public void onClick(View view) {
                         mList.remove(position);
                         ProductList.this.adapter.notifyDataSetChanged();
+                        Toast.makeText(getApplicationContext(), "Vöru hefur verið eytt", Toast.LENGTH_SHORT).show();
+
                     }
                 });
 
