@@ -27,6 +27,9 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.devnied.emvnfccard:library:2.1.1'
     compile 'com.android.support:support-v4:22.1.1'
-    compile 'javax.mail:javax.mail-api:1.5.3'
-    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar')
+    //compile 'javax.mail:javax.mail-api:1.5.3'
+    compile 'de.keyboardsurfer.android.widget:crouton:1.8.5@aar'
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
 }

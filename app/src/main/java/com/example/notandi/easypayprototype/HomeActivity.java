@@ -8,7 +8,6 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.IsoDep;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.example.notandi.easypayprototype.adapter.MenuDrawerAdapter;
 import com.github.devnied.emvnfccard.model.EmvCard;
 import com.github.devnied.emvnfccard.parser.EmvParser;
 import com.github.devnied.emvnfccard.utils.AtrUtils;
@@ -79,12 +77,12 @@ public class HomeActivity extends FragmentActivity
     /**
      * Action bar drawer toggle
      */
-    private ActionBarDrawerToggle mActionBarDrawerToggle;
+    //private ActionBarDrawerToggle mActionBarDrawerToggle;
 
     /**
      * Menu adapter
      */
-    private MenuDrawerAdapter mMenuAdapter;
+    //private MenuDrawerAdapter mMenuAdapter;
 
     /**
      * IsoDep provider
@@ -302,19 +300,25 @@ public class HomeActivity extends FragmentActivity
     }
 
     @Override
-    public boolean onOptionsItemSelected(final MenuItem item) {
-        if (mActionBarDrawerToggle.onOptionsItemSelected(item)) {
+    public boolean onOptionsItemSelected(final MenuItem item)
+    {
+        /*
+        if (mActionBarDrawerToggle.onOptionsItemSelected(item))
+        {
             Crouton.cancelAllCroutons();
             return true;
         }
+        */
         return super.onOptionsItemSelected(item);
+
     }
 
     public StringBuffer getLog() {
         return mProvider.getLog();
     }
 
-    public EmvCard getCard() {
+    public EmvCard getCard()
+    {
         return mReadCard;
     }
 
