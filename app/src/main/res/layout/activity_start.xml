@@ -29,6 +29,7 @@
         android:textSize="30sp" />
 
     <TextView
+        android:id="@+id/velcomeText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Velkomin!"
@@ -38,21 +39,30 @@
         android:layout_marginTop="100dp"/>
 
     <Button
+        android:id="@+id/startSale"
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_marginTop="150dp"/>
+        android:layout_below="@id/velcomeText"
+        android:text="@string/start_sale"
+        android:textSize="22sp" />
 
     <Button
+        android:id="@+id/goToSalesList"
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_marginTop="230dp"/>
+        android:layout_marginTop="230dp"
+        android:text="@string/sales_log"
+        android:textSize="22sp"/>
 
     <Button
+        android:id="@+id/refund"
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_marginTop="310dp"/>
+        android:layout_marginTop="310dp"
+        android:text="@string/refund"
+        android:textSize="22sp"/>
 
 </RelativeLayout>
