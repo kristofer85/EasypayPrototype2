@@ -42,7 +42,7 @@ public class Amount extends Activity
         btnClick = new ButtonClickListener();
 
 
-        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv};
+        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnDel};
 
         for( int id:idList)
         {
