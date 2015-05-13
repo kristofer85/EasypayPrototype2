@@ -8,60 +8,48 @@
     tools:context="com.example.notandi.easypayprototype.start">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView3"
-        style="@style/productName" />
-
-    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_below="@+id/textView3"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:layout_alignParentStart="true"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:id="@+id/velcomeText"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Velkomin !!"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:gravity="center"
-        android:layout_marginTop="100dp"/>
+        android:background="@drawable/easy_pay_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/startSale"
         android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_below="@id/velcomeText"
+        android:layout_below="@id/imageViewLogo"
         android:text="@string/start_sale"
         android:textSize="22sp" />
 
     <Button
         android:id="@+id/goToSalesList"
         android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_marginTop="230dp"
+        android:layout_below="@id/startSale"
         android:text="@string/sales_log"
         android:textSize="22sp"/>
 
     <Button
         android:id="@+id/refund"
         android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="@drawable/graybuttonbackground"
-        android:layout_marginTop="310dp"
+        android:layout_below="@id/goToSalesList"
         android:text="@string/refund"
         android:textSize="22sp"/>
 

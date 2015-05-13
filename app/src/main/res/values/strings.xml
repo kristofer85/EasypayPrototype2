@@ -10,7 +10,7 @@
     <string name="title_activity_payment">Payment</string>
     <string name="title_activity_enter_card_manualy">EnterCardManualy</string>
     <string name="title_activity_payment_result">PaymentResult</string>
-    <string name="title_activity_receipt">Receipt</string>
+    <string name="title_activity_receipt">Kvittun</string>
     <string name="title_activity_receipt_sent">ReceiptSent</string>
     <string name="accept">Staðfesta</string>
     <string name="user">Fyrirtæki ehf</string>

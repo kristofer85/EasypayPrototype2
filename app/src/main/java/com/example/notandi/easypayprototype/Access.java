@@ -50,7 +50,7 @@ public class Access extends Activity {
 
                 if(activeCode)
                 {
-                    Intent intent = new Intent(v.getContext(), Amount.class);
+                    Intent intent = new Intent(v.getContext(), start.class);
                     intent.putExtra("User_Name","Fyrirtæki ehf.");
                     startActivityForResult(intent, 0);
                 }

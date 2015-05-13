@@ -120,6 +120,7 @@ public class ProductList extends Activity {
                 intent.putExtra("vorulisti", true);
                 intent.putExtra("User_Name", user);
                 startActivityForResult(intent, 0);
+
             }
         });
 
