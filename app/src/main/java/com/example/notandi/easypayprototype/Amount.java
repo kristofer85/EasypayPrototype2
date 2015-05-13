@@ -42,7 +42,7 @@ public class Amount extends Activity
         btnClick = new ButtonClickListener();
 
 
-        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnNeg};
+        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv};
 
         for( int id:idList)
         {
@@ -83,9 +83,12 @@ public class Amount extends Activity
             @Override
             public void onClick(View v)
             {
-                CalcNr(operator);
-                Screen.setText(String.valueOf(numberBfr));
-                String pay = Screen.getText().toString();
+                //CalcNr(operator);
+                //Screen.setText(String.valueOf(numberBfr));
+                //String pay = Screen.getText().toString();
+                String ScreenEqat = Screen.getText().toString();
+                int pay = Calc.calculate(ScreenEqat);
+                Screen.setText(String.valueOf(pay));
                 Intent intent = new Intent(Amount.this, HomeActivity.class);
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
@@ -191,7 +194,7 @@ public class Amount extends Activity
                     break;
                 case R.id.btnDel:
                     String str = Screen.getText().toString();
-                    if (str.length() > 0 && str.charAt(str.length()-1)=='x') {
+                    if (str.length() > 0) {
                         str = str.substring(0, str.length()-1);
                     }
                     Screen.setText(str);
