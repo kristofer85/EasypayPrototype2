@@ -1,5 +1,6 @@
 package com.example.notandi.easypayprototype;
 import java.util.Properties;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
@@ -39,8 +40,7 @@ public class sendingEmail {
             //Who is sending the email
             message.setFrom(new InternetAddress("easypayuser1@gmail.com"));
             //Who we are sending the email to.
-            message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(To));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(To));
             //Subject for the email
             message.setSubject("Testing Subject");
             //Text in the email
@@ -50,8 +50,15 @@ public class sendingEmail {
 
             System.out.println("Done");
 
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
         }
+        catch (MessagingException e) {
+            e.printStackTrace();
+            //throw new RuntimeException(e);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
     }
 }

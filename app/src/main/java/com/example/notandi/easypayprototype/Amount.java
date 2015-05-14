@@ -42,7 +42,7 @@ public class Amount extends Activity
         btnClick = new ButtonClickListener();
 
 
-        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnNeg};
+        final int idList[] = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btnPlus, R.id.btnMinus, R.id.btnMult,  R.id.btnEquals, R.id.btnC, R.id.btnDiv, R.id.btnDel};
 
         for( int id:idList)
         {
@@ -90,7 +90,8 @@ public class Amount extends Activity
                 Intent intent = new Intent(v.getContext(), Payment.class);
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
-                startActivityForResult(intent, 0);
+                //startActivityForResult(intent, 0);
+                startActivity(intent);
             }
         });
 
@@ -98,6 +99,9 @@ public class Amount extends Activity
             @Override
             public void onClick(View v)
             {
+                String ScreenEqat = Screen.getText().toString();
+                int temp = Calc.calculate(ScreenEqat);
+                Screen.setText(String.valueOf(temp));
                 String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), ProductList.class);
                 intent.putExtra("Amount", pay);
@@ -191,7 +195,7 @@ public class Amount extends Activity
                     break;
                 case R.id.btnDel:
                     String str = Screen.getText().toString();
-                    if (str.length() > 0 && str.charAt(str.length()-1)=='x') {
+                    if (str.length() > 0) {
                         str = str.substring(0, str.length()-1);
                     }
                     Screen.setText(str);
@@ -199,7 +203,7 @@ public class Amount extends Activity
                 case R.id.btnEquals:
                     /*
                     CalcNr(operator);
-                    Screen.setText(String.valueOf(numberBfr));
+                    Screen.setText(String.valueOf(numberBfr));er3
                     oper = false;
                     */
                     String ScreenEqat = Screen.getText().toString();

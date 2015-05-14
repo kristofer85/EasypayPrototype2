@@ -2,10 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.notandi.easypayprototype" >
 
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.internet" />
+
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:screenOrientation="portrait"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Access"
@@ -44,14 +54,21 @@
             android:name=".ProductList"
             android:label="ProductList" >
         </activity>
-        <activity
-            android:name=".AddProduct"
+        <activity android:name=".AddProduct"
             android:label="AddProduct" >
+        </activity>
+        <activity android:name=".HomeActivity"
+            android:label="HomeActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_list" />
         </activity>
         <activity
             android:name=".start"
             android:label="@string/title_activity_start" >
         </activity>
     </application>
-
 </manifest>

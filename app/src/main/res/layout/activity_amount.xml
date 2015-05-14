@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView3"
+        android:id="@+id/homeUser"
         style="@style/productName" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/homeUser"
         android:layout_marginBottom="10dp"
         android:layout_alignParentEnd="true"
         android:gravity="center"
@@ -117,11 +117,11 @@
         android:text="@string/zero"
         android:id="@+id/btn0"
         android:layout_below="@+id/btn1"
-        android:layout_alignEnd="@+id/btn2"
         android:visibility="visible"
         android:layout_alignStart="@+id/btn1"
         android:textSize="20sp"
-        android:background="@android:drawable/btn_default" />
+        android:background="@android:drawable/btn_default"
+        android:layout_alignEnd="@+id/btnMult" />
 
     <Button
         android:layout_width="wrap_content"
@@ -185,18 +185,6 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="@string/neg"
-        android:id="@+id/btnNeg"
-        android:layout_alignTop="@+id/btn0"
-        android:layout_alignStart="@+id/btn3"
-        android:layout_alignEnd="@+id/btn3"
-        android:visibility="visible"
-        android:textSize="20sp"
-        android:background="@android:drawable/btn_default" />
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
         android:text="@string/plus"
         android:id="@+id/btnPlus"
         android:visibility="visible"
@@ -237,12 +225,10 @@
         android:text="@string/div"
         android:id="@+id/btnDiv"
         android:visibility="visible"
-        android:layout_alignTop="@+id/btnNeg"
-        android:layout_alignEnd="@+id/btnMult"
-        android:layout_toEndOf="@+id/btnNeg"
-        android:layout_alignStart="@+id/btnMult"
         android:textSize="20sp"
-        android:background="@android:drawable/btn_default" />
+        android:background="@android:drawable/btn_default"
+        android:layout_below="@+id/btn5"
+        android:layout_alignStart="@+id/btnDel" />
 
     <Button
         android:layout_width="50dp"
@@ -273,9 +259,9 @@
         android:id="@+id/btnEquals"
         android:textSize="30sp"
         android:visibility="visible"
-        android:layout_alignTop="@+id/btnMult"
-        android:layout_alignStart="@+id/btnDel"
-        android:background="@android:drawable/btn_default" />
+        android:background="@android:drawable/btn_default"
+        android:layout_below="@+id/btn2"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="440sp"
