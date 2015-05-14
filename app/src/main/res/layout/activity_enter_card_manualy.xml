@@ -22,9 +22,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
+        android:textSize="30sp"
         android:layout_below="@+id/textView11"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20sp" />
+        android:layout_alignEnd="@+id/btnConfirm"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +36,8 @@
         android:layout_below="@+id/lblUser"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20sp"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +48,8 @@
         android:textSize="25sp"
         android:layout_below="@+id/lblAmmount"
         android:layout_alignStart="@+id/txtCardNr"
-        android:layout_marginTop="30sp" />
+        android:layout_marginTop="30sp"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="300sp"
@@ -68,7 +71,8 @@
         android:textSize="25sp"
         android:layout_below="@+id/txtCardNr"
         android:layout_alignStart="@+id/txtExpDate"
-        android:layout_marginTop="20sp" />
+        android:layout_marginTop="20sp"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="300sp"
