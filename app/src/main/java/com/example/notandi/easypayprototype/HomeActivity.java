@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.github.devnied.emvnfccard.model.EmvCard;
 import com.github.devnied.emvnfccard.parser.EmvParser;
@@ -115,13 +116,19 @@ public class HomeActivity extends FragmentActivity
     private byte[] lastAts;
     public String user;
     public String Amount;
+    private TextView lblAmount;
+    private TextView lblUser;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_activity);
         user = getIntent().getStringExtra("User_Name");
-        Amount = getIntent().getStringExtra("Amount");
+        Amount = String.valueOf(getIntent().getIntExtra("Amount",0));
+        lblAmount = (TextView) findViewById(R.id.lblAmount);
+        lblUser = (TextView) findViewById(R.id.homeUser);
+        lblAmount.setText(getString(R.string.amount) + " "+ Amount);
+        lblUser.setText(user);
 
         // init NfcUtils
         mNfcUtils = new NFCUtils(this);
@@ -152,7 +159,7 @@ public class HomeActivity extends FragmentActivity
 
     @Override
     protected void onResume() {
-        //mNfcUtils.enableDispatch();
+        mNfcUtils.enableDispatch();
 
         super.onResume();
     }

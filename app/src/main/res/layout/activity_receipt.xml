@@ -50,6 +50,7 @@
         android:layout_below="@+id/lblEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:imeOptions="actionDone"
         android:hint=" johndoe@email.com" />
 
     <Button

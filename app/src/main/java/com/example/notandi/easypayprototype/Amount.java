@@ -101,6 +101,9 @@ public class Amount extends Activity
             @Override
             public void onClick(View v)
             {
+                String ScreenEqat = Screen.getText().toString();
+                int temp = Calc.calculate(ScreenEqat);
+                Screen.setText(String.valueOf(temp));
                 String pay = Screen.getText().toString();
                 Intent intent = new Intent(v.getContext(), ProductList.class);
                 intent.putExtra("Amount", pay);
@@ -202,7 +205,7 @@ public class Amount extends Activity
                 case R.id.btnEquals:
                     /*
                     CalcNr(operator);
-                    Screen.setText(String.valueOf(numberBfr));
+                    Screen.setText(String.valueOf(numberBfr));er3
                     oper = false;
                     */
                     String ScreenEqat = Screen.getText().toString();

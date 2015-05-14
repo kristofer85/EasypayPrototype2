@@ -8,7 +8,7 @@
         android:id="@+id/content_frame"
         android:layout_width="fill_parent"
         android:layout_height="270sp"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/lblAmount"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="fyrirtæki ehf"
-        android:id="@+id/textView3"
+        android:id="@+id/homeUser"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
@@ -63,8 +63,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Viðskipti ISK. XXXX"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
+        android:id="@+id/lblAmount"
+        android:layout_below="@+id/homeUser"
         android:layout_centerHorizontal="true" />
 
     <Button
