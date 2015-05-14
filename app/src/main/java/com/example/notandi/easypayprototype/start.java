@@ -1,17 +1,32 @@
 package com.example.notandi.easypayprototype;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class start extends Activity {
 
+    private String user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+        user = getIntent().getStringExtra("User_Name");
+        Button btnStartSale = (Button) findViewById(R.id.startSale);
+        btnStartSale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(v.getContext(), Amount.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
