@@ -158,5 +158,54 @@
 
     <!-- Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] -->
     <string name="skip_button_label">Skip</string>
+    <string-array name="months">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>yellow</item>
+        <item>purple</item>
+        <item>orange</item>
+        <item>Blue1</item>
+        <item>Blue2</item>
+        <item>Blue3</item>
+        <item>Blue4</item>
+        <item>Blue5</item>
+        <item>Blue6</item>
+        <item>Blue7</item>
+        <item>Blue8</item>
+        <item>Blue9</item>
+        <item>Blue10</item>
+        <item>Blue11</item>
+        <item>Blue12</item>
+        <item>Blue13</item>
+        <item>Blue14</item>
+        <item>Blue15</item>
+        <item>Blue16</item>
+    </string-array>
+    <string-array name="years">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>yellow</item>
+        <item>purple</item>
+        <item>orange</item>
+        <item>Blue1</item>
+        <item>Blue2</item>
+        <item>Blue3</item>
+        <item>Blue4</item>
+        <item>Blue5</item>
+        <item>Blue6</item>
+        <item>Blue7</item>
+        <item>Blue8</item>
+        <item>Blue9</item>
+        <item>Blue10</item>
+        <item>Blue11</item>
+        <item>Blue12</item>
+        <item>Blue13</item>
+        <item>Blue14</item>
+        <item>Blue15</item>
+        <item>Blue16</item>
+    </string-array>
+    <string name="title_activity_solu_yfirlit">SoluYfirlit</string>
 
 </resources>

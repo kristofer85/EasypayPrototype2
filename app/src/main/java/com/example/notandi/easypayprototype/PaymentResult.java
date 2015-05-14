@@ -40,7 +40,7 @@ public class PaymentResult extends Activity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(v.getContext(), Amount.class);
+                Intent intent = new Intent(v.getContext(), start.class);
                 intent.putExtra("User_Name", user);
                 startActivityForResult(intent, 0);
             }

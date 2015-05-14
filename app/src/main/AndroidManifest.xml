@@ -6,7 +6,6 @@
     <uses-permission android:name="com.android.vending.BILLING" />
     <uses-permission android:name="android.permission.internet" />
 
-
     <uses-feature
         android:name="android.hardware.nfc"
         android:required="true" />
@@ -54,14 +53,17 @@
             android:name=".ProductList"
             android:label="ProductList" >
         </activity>
-        <activity android:name=".AddProduct"
+        <activity
+            android:name=".AddProduct"
             android:label="AddProduct" >
         </activity>
-        <activity android:name=".HomeActivity"
+        <activity
+            android:name=".HomeActivity"
             android:label="HomeActivity" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_list" />
@@ -70,5 +72,10 @@
             android:name=".start"
             android:label="@string/title_activity_start" >
         </activity>
+        <activity
+            android:name=".SoluYfirlit"
+            android:label="@string/title_activity_solu_yfirlit" >
+        </activity>
     </application>
+
 </manifest>

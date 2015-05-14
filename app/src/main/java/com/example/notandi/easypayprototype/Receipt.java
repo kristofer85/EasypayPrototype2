@@ -46,7 +46,7 @@ public class Receipt extends Activity {
                 Intent intent = new Intent(v.getContext(), ReceiptSent.class);
                 intent.putExtra("User_Name", user);
                 intent.putExtra("ReceiptType", "Email");
-                EmailSent.sendEmail("kristofer85@yahoo.com"," bleh this is an email ");
+                //EmailSent.sendEmail("kristofer85@yahoo.com"," bleh this is an email ");
                 intent.putExtra("ReceiptValue", Email);
                 startActivityForResult(intent, 0);
             }
