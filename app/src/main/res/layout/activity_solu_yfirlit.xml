@@ -33,6 +33,53 @@
         android:gravity="center"
         android:textSize="30sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Færsl Nr"
+        android:textSize="10sp"
+        android:id="@+id/textViewFnrSolu"
+        android:layout_below="@+id/textViewFyrirtSolYfirlt"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Fyrirtæki"
+        android:textSize="10sp"
+        android:id="@+id/textViewFtSolu"
+        android:layout_marginLeft="17dp"
+        android:layout_alignTop="@+id/textViewFnrSolu"
+        android:layout_toEndOf="@+id/textViewFnrSolu"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Dagsetning"
+        android:textSize="10sp"
+        android:id="@+id/textViewDagSolu"
+        android:layout_alignTop="@+id/textViewFnrSolu"
+        android:layout_toEndOf="@+id/textViewFtSolu"
+        android:layout_marginStart="54dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Upphæð"
+        android:textSize="10sp"
+        android:id="@+id/textViewUpphSolu"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/textViewDagSolu"
+        android:layout_alignTop="@+id/textViewFnrSolu" />
+
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
