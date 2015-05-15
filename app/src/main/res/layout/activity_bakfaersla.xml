@@ -66,16 +66,14 @@
             android:textSize="10dp" />
 
         <TextView
+            android:id="@+id/BLEH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="bakfæra"
-            android:id="@+id/BLEH"
             android:layout_column="8"
-            android:textColor="#FF0000"
-            android:textSize="15dp"
-            android:background="#00F0F0"
-            android:layout_margin="3dp" />
+            android:textColor="@android:color/black"
+            android:layout_margin="3dp"
+            android:text="@string/refundShort"
+            android:textSize="12dp" />
 
     </TableRow>
 

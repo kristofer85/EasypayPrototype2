@@ -26,15 +26,15 @@ public class SoluYfirlit extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solu_yfirlit);
-        mList.add(new Fearsla(134, "Bonus", "19/03/2015", 500));
+        mList.add(new Fearsla(134, "B\u00f3nus", "19/03/2015", 500));
         tagIncrementer++;
-        mList.add(new Fearsla(174,"Fyrirt?ki ehf","27/03/2015",7300));
+        mList.add(new Fearsla(174,"Fyrirt\u00e6ki ehf","27/03/2015",7300));
         tagIncrementer++;
-        mList.add(new Fearsla(234, "Fyrirt?ki ehf", "19/09/2016", 13500));
+        mList.add(new Fearsla(234, "Fyrirt\u00e6ki ehf", "19/09/2016", 13500));
         tagIncrementer++;
-        mList.add(new Fearsla(34,"Fyrirt?ki ehf","19/03/2016",2500));
+        mList.add(new Fearsla(34,"Fyrirt\u00e6ki ehf","19/03/2016",2500));
         tagIncrementer++;
-        mList.add(new Fearsla(74,"Fyrirt?ki ehf","19/02/2016",5000));
+        mList.add(new Fearsla(74,"Fyrirt\u00e6ki ehf","19/02/2016",5000));
         tagIncrementer++;
 
         mGridView = (GridView) findViewById(R.id.faerslur);

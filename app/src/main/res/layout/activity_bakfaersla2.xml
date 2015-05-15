@@ -64,12 +64,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/entryNumber"
+            android:layout_above="@+id/faerslur2"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Færsl Nr"
             android:id="@+id/textView4"
-            android:layout_below="@+id/textView3"
-            android:layout_alignStart="@+id/faerslur"
-            android:layout_marginTop="114dp" />
+            android:layout_above="@+id/faerslur2"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,9 +83,10 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Fyrirtæki"
             android:id="@+id/textView13"
-            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginLeft="17dp"
+            android:layout_alignTop="@+id/textView4"
             android:layout_toEndOf="@+id/textView4"
-            android:layout_marginLeft="17dp" />
+            android:layout_marginStart="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,10 +94,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Dagsetning"
             android:id="@+id/textView16"
-            android:layout_alignBottom="@+id/textView13"
-            android:layout_above="@+id/faerslur2"
             android:layout_toEndOf="@+id/textView13"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginStart="12dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,9 +103,10 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Upphæð"
             android:id="@+id/textView20"
-            android:layout_marginLeft="20dp"
-            android:layout_alignTop="@+id/textView16"
-            android:layout_toEndOf="@+id/textViewEasyPayBakfaersla" />
+            android:layout_marginStart="12dp"
+            android:layout_alignBaseline="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 
