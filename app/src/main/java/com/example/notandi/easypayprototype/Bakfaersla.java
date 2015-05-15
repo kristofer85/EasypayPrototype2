@@ -63,7 +63,7 @@ public class Bakfaersla extends Activity {
                     public void onClick(View view) {
                         mList.remove(position);
                         Bakfaersla.this.adapter.notifyDataSetChanged();
-                        Toast.makeText(getApplicationContext(), "F?rsla hefur veri? bakf?r?", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Faersla hefur veri? bakfaerd", Toast.LENGTH_SHORT).show();
 
                     }
                 });
