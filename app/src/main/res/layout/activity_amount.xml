@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/homeUser"
+        android:id="@+id/AmountHome"
         style="@style/productName" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_below="@+id/homeUser"
+        android:layout_below="@+id/AmountHome"
         android:layout_marginBottom="10dp"
         android:layout_alignParentEnd="true"
         android:gravity="center"

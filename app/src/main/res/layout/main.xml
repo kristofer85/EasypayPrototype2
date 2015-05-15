@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="fyrirtæki ehf"
-        android:id="@+id/homeUser"
+        android:id="@+id/AmountHome"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
@@ -64,7 +64,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Viðskipti ISK. XXXX"
         android:id="@+id/lblAmount"
-        android:layout_below="@+id/homeUser"
+        android:layout_below="@+id/AmountHome"
         android:layout_centerHorizontal="true" />
 
     <Button

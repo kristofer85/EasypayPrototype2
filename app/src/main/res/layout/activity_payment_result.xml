@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/productName"
-        android:id="@+id/textView17"
+        android:id="@+id/PaymentResultHome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView18"
-        android:layout_below="@+id/textView17"
+        android:layout_below="@+id/PaymentResultHome"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -121,7 +121,7 @@
         android:id="@+id/textView22"
         android:layout_marginBottom="37dp"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/textView17"
+        android:layout_toStartOf="@+id/PaymentResultHome"
         android:textColor="#000000" />
 
     <Button
@@ -131,7 +131,7 @@
         android:id="@+id/btnReceiptNo"
         android:textSize="30sp"
         android:layout_alignTop="@+id/btnReceiptYes"
-        android:layout_toEndOf="@+id/textView17"
+        android:layout_toEndOf="@+id/PaymentResultHome"
         android:layout_marginBottom="20dp"
         android:background="@drawable/graybuttonbackground"
         android:layout_marginLeft="-15dp" />

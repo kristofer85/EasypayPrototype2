@@ -14,14 +14,14 @@
         style="@style/productName"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView27" />
+        android:id="@+id/ReceiptHome" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView28"
-        android:layout_below="@+id/textView27"
+        android:layout_below="@+id/ReceiptHome"
         android:layout_centerHorizontal="true"/>
 
 

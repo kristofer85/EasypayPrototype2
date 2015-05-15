@@ -56,6 +56,16 @@ public class PaymentResult extends Activity
             }
         });
 
+        TextView home = (TextView) findViewById(R.id.PaymentResultHome);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

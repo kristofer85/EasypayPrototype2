@@ -81,8 +81,7 @@ public class Amount extends Activity
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 String ScreenEqat = Screen.getText().toString();
                 int temp = Calc.calculate(ScreenEqat);
                 Screen.setText(String.valueOf(temp));
@@ -107,6 +106,15 @@ public class Amount extends Activity
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
                 startActivityForResult(intent, 0);
+            }
+        });
+        TextView home = (TextView) findViewById(R.id.AmountHome);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
             }
         });
 

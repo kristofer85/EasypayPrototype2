@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
-        android:id="@+id/homeUser"
+        android:id="@+id/AmountHome"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
@@ -70,7 +70,7 @@
         android:text="@string/amount"
         android:id="@+id/lblAmount"
         android:textSize="30sp"
-        android:layout_below="@+id/homeUser"
+        android:layout_below="@+id/AmountHome"
         android:layout_alignParentStart="true" />
 
     <Button

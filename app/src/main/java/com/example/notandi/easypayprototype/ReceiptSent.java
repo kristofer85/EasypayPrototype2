@@ -40,6 +40,16 @@ public class ReceiptSent extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
+
+        TextView home = (TextView) findViewById(R.id.ReceiptHome);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
+            }
+        });
     }
 
 
