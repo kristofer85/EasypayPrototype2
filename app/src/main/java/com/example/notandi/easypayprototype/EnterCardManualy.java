@@ -31,7 +31,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
         TextView lblUser = (TextView) findViewById(R.id.lblUser);
         TextView lblAmount = (TextView) findViewById(R.id.lblAmmount);
         lblUser.setText(user);
-        lblAmount.setText(Amount +"ISK");
+        lblAmount.setText("Upph. " + Amount +" ISK.");
 
         spin1 = (Spinner) findViewById(R.id.SpinMonth);
         spin2 = (Spinner) findViewById(R.id.SpinYear);
@@ -91,7 +91,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
     {
         TextView myText = (TextView) view;
-        Toast.makeText(this, "you selected " + myText.getText(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "you selected " + myText.getText(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
