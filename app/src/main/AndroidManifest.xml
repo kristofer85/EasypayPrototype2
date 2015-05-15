@@ -76,6 +76,10 @@
             android:name=".SoluYfirlit"
             android:label="@string/title_activity_solu_yfirlit" >
         </activity>
+        <activity
+            android:name=".Bakfaersla"
+            android:label="@string/title_activity_bakfaersla" >
+        </activity>
     </application>
 
 </manifest>

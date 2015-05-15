@@ -38,6 +38,17 @@ public class start extends Activity {
                 startActivity(intent);
             }
         });
+
+        Button btnRefund = (Button) findViewById(R.id.refund);
+        btnRefund.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(v.getContext(), Bakfaersla.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

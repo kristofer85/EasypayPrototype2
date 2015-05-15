@@ -19,7 +19,7 @@
         android:layout_alignParentEnd="true">
 
         <GridView
-            android:id="@+id/faerslur"
+            android:id="@+id/faerslur2"
             android:layout_width="fill_parent"
             android:layout_height="250dp"
             android:numColumns="1"
