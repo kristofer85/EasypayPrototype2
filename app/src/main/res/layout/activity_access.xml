@@ -55,8 +55,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/lblWrongAccess"
-        android:layout_above="@+id/lblAccess"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/btnAccess"
         android:layout_centerHorizontal="true"
-        android:textColor="#FF0000" />
+        android:layout_marginTop="51dp" />
 
 </RelativeLayout>
