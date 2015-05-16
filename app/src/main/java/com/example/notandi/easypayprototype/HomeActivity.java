@@ -124,7 +124,7 @@ public class HomeActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_activity);
         user = getIntent().getStringExtra("User_Name");
-        Amount = String.valueOf(getIntent().getIntExtra("Amount",0));
+        Amount = getIntent().getStringExtra("Amount");
         lblAmount = (TextView) findViewById(R.id.lblAmount);
         lblUser = (TextView) findViewById(R.id.AmountHome);
         lblAmount.setText(getString(R.string.amount) + " "+ Amount);

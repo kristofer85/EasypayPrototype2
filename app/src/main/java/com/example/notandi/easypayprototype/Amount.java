@@ -86,7 +86,7 @@ public class Amount extends Activity
                 int temp = Calc.calculate(ScreenEqat);
                 Screen.setText(String.valueOf(temp));
                 String pay = Screen.getText().toString();
-                Intent intent = new Intent(v.getContext(), Payment.class);
+                Intent intent = new Intent(v.getContext(), HomeActivity.class);
                 intent.putExtra("Amount", pay);
                 intent.putExtra("User_Name", user);
                 //startActivityForResult(intent, 0);
