@@ -31,7 +31,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
         TextView lblUser = (TextView) findViewById(R.id.lblUser);
         TextView lblAmount = (TextView) findViewById(R.id.lblAmmount);
         lblUser.setText(user);
-        lblAmount.setText("Upph. " + Amount +" ISK.");
+        lblAmount.setText("Viðskipti ISK. " + Amount);
 
         spin1 = (Spinner) findViewById(R.id.SpinMonth);
         spin2 = (Spinner) findViewById(R.id.SpinYear);
@@ -56,7 +56,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
                 //String Cvs = txtCVS.getText().toString();
                 intent.putExtra("User_Name", user);
                 intent.putExtra("Amount", Amount);
-                intent.putExtra("Address", "blarg street 5");
+                intent.putExtra("Address", "Strandgata 1");
                 intent.putExtra("PaymentConfirmed", true);
                 startActivityForResult(intent, 0);
             }
