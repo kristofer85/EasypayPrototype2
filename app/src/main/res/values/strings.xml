@@ -7,11 +7,11 @@
     <string name="Amount">Upphæð</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_amount">Upphæð:</string>
-    <string name="title_activity_payment">Payment</string>
-    <string name="title_activity_enter_card_manualy">EnterCardManualy</string>
-    <string name="title_activity_payment_result">PaymentResult</string>
+    <string name="title_activity_payment">Greiðsla</string>
+    <string name="title_activity_enter_card_manualy">Handslá inn kortanúmer</string>
+    <string name="title_activity_payment_result">Greiðsla hefur verið framkvæmd</string>
     <string name="title_activity_receipt">Kvittun</string>
-    <string name="title_activity_receipt_sent">ReceiptSent</string>
+    <string name="title_activity_receipt_sent">Kvittun hefur verið send</string>
     <string name="accept">Staðfesta</string>
     <string name="user">Fyrirtæki ehf</string>
     <string name="welcome">Velkomin!</string>
@@ -189,7 +189,7 @@
         <item>2019</item>
         <item>2020</item>
     </string-array>
-    <string name="title_activity_solu_yfirlit">SoluYfirlit</string>
-    <string name="title_activity_bakfaersla">Bakfaersla</string>
+    <string name="title_activity_solu_yfirlit">Færsluyfirlit</string>
+    <string name="title_activity_bakfaersla">Bakfærsla</string>
 
 </resources>
