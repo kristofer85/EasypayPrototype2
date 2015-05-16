@@ -19,12 +19,12 @@
             android:id="@+id/BFN"
             android:textColor="#000000"
             android:layout_column="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginTop="3sp"
-            android:layout_marginBottom="3sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
             android:layout_margin="3dp"
-            android:textSize="10dp" />
+            android:textSize="11sp" />
 
         <TextView
             android:layout_width="60dp"
@@ -34,7 +34,7 @@
             android:textColor="#000000"
             android:layout_column="2"
             android:layout_margin="3dp"
-            android:textSize="10dp" />
+            android:textSize="11sp" />
 
         <TextView
             android:layout_width="60sp"
@@ -44,12 +44,12 @@
             android:textColor="#000000"
             android:layout_column="4"
             android:layout_gravity="top"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="3sp"
-            android:layout_marginRight="10sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="3dp"
             android:layout_margin="3dp"
-            android:textSize="10dp" />
+            android:textSize="11sp" />
 
         <TextView
             android:layout_width="40dp"
@@ -58,12 +58,12 @@
             android:id="@+id/BFV"
             android:textColor="#000000"
             android:layout_column="6"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="3sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="3sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
             android:layout_margin="3dp"
-            android:textSize="10dp" />
+            android:textSize="11dp" />
 
         <TextView
             android:id="@+id/BLEH"
@@ -73,7 +73,7 @@
             android:textColor="@android:color/black"
             android:layout_margin="3dp"
             android:text="@string/refundShort"
-            android:textSize="12dp"/>
+            android:textSize="14sp"/>
 
     </TableRow>
 
