@@ -1,6 +1,7 @@
 package com.example.notandi.easypayprototype;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -85,6 +86,14 @@ public class Bakfaersla extends Activity {
                     }
                 }
         );
+
+        TextView home = (TextView) findViewById(R.id.textViewEasyPayBakfaersla);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
 
         /*
         btnPlus.setOnClickListener(new View.OnClickListener() {
