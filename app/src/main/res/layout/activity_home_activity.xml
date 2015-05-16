@@ -3,7 +3,8 @@
     android:layout_width="wrap_content"
     android:fitsSystemWindows="true"
     android:layout_height="wrap_content"
-    android:background="@drawable/radialgradientback">
+    android:background="@drawable/radialgradientback"
+    android:id="@+id/">
 
     <FrameLayout
         android:id="@+id/content_frame"
