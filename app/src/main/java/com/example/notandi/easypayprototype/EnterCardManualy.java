@@ -56,7 +56,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
                 //String Cvs = txtCVS.getText().toString();
                 intent.putExtra("User_Name", user);
                 intent.putExtra("Amount", Amount);
-                intent.putExtra("Address", "Strandgata1");
+                intent.putExtra("Address", address);
                 intent.putExtra("PaymentConfirmed", true);
                 startActivityForResult(intent, 0);
             }
