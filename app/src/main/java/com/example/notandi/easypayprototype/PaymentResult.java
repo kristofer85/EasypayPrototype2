@@ -32,7 +32,7 @@ public class PaymentResult extends Activity
         if(!paymentReceived)
         {
             ReceivedPayment.setBackgroundColor(Color.rgb(255,0,0));
-            ReceivedPayment.setText("Payment was not Received");
+            ReceivedPayment.setText("Færsla tókst ekki");
         }
         Button btnReceiptYes = (Button) findViewById(R.id.btnReceiptYes);
         Button btnReceiptNo = (Button) findViewById(R.id.btnReceiptNo);
