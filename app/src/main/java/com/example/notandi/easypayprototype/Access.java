@@ -56,7 +56,7 @@ public class Access extends Activity {
                 }
                 else
                 {
-                    LoginResult.setText(Code +" is not a valid access code try again");
+                    LoginResult.setText(Code +" er ekki gildur aðgangskóði");
                 }
             }
         });
