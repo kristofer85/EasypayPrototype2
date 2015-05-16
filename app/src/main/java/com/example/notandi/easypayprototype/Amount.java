@@ -81,16 +81,30 @@ public class Amount extends Activity
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 String ScreenEqat = Screen.getText().toString();
-                int temp = Calc.calculate(ScreenEqat);
-                Screen.setText(String.valueOf(temp));
-                String pay = Screen.getText().toString();
-                Intent intent = new Intent(v.getContext(), HomeActivity.class);
-                intent.putExtra("Amount", pay);
-                intent.putExtra("User_Name", user);
-                //startActivityForResult(intent, 0);
-                startActivity(intent);
+                if(ScreenEqat.equals(""))
+                {
+
+                    Intent intent = new Intent(v.getContext(), HomeActivity.class);
+                    intent.putExtra("Amount", 0);
+                    intent.putExtra("User_Name", user);
+                    //startActivityForResult(intent, 0);
+                    startActivity(intent);
+                }
+                else
+                {
+
+                    int temp = Calc.calculate(ScreenEqat);
+                    Screen.setText(String.valueOf(temp));
+                    String pay = Screen.getText().toString();
+                    Intent intent = new Intent(v.getContext(), HomeActivity.class);
+                    intent.putExtra("Amount", pay);
+                    intent.putExtra("User_Name", user);
+                    //startActivityForResult(intent, 0);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -99,13 +113,25 @@ public class Amount extends Activity
             public void onClick(View v)
             {
                 String ScreenEqat = Screen.getText().toString();
-                int temp = Calc.calculate(ScreenEqat);
-                Screen.setText(String.valueOf(temp));
-                String pay = Screen.getText().toString();
-                Intent intent = new Intent(v.getContext(), ProductList.class);
-                intent.putExtra("Amount", pay);
-                intent.putExtra("User_Name", user);
-                startActivityForResult(intent, 0);
+                if(ScreenEqat.equals(""))
+                {
+
+                    Intent intent = new Intent(v.getContext(), ProductList.class);
+                    intent.putExtra("Amount", "0");
+                    intent.putExtra("User_Name", user);
+                    //startActivityForResult(intent, 0);
+                    startActivity(intent);
+                }
+                else
+                {
+                    int temp = Calc.calculate(ScreenEqat);
+                    Screen.setText(String.valueOf(temp));
+                    String pay = Screen.getText().toString();
+                    Intent intent = new Intent(v.getContext(), ProductList.class);
+                    intent.putExtra("Amount", pay);
+                    intent.putExtra("User_Name", user);
+                    startActivity(intent);
+                }
             }
         });
         TextView home = (TextView) findViewById(R.id.AmountHome);

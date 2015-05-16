@@ -68,7 +68,7 @@
     <string name="start_sale">Hefja sölu</string>
     <string name="sales_log">Færsluyfirlit</string>
     <string name="refund">Bakfæra færslu</string>
-    <string name="refundShort">Bakfæra</string>
+    <string name="refundShort"> Bakfæra </string>
     <string name="entryNumber">Færslu Nr.</string>
 
     <string name="hello_world">Hello world!</string>

@@ -1,14 +1,11 @@
 package com.example.notandi.easypayprototype;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -44,6 +41,10 @@ public class ProductList extends Activity {
         setContentView(R.layout.activity_product_list);
         final String user = getIntent().getStringExtra("User_Name");
         Amount = getIntent().getStringExtra("Amount");
+        if(Amount.equals(""))
+        {
+            Amount = "0";
+        }
         ImageButton btnPlus = (ImageButton) findViewById(R.id.btnAdd);
         Button btnConfirm = (Button) findViewById(R.id.btnConfirmList);
         TextView lblUser = (TextView) findViewById(R.id.userProduct);
