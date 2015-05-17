@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class EnterCardManualy extends Activity implements AdapterView.OnItemSelectedListener {
@@ -45,8 +44,7 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), PaymentResult.class);
                 EditText txtCardNr = (EditText) findViewById(R.id.txtCardNr);
                 //EditText txtExpDate = (EditText) findViewById(R.id.txtExpDate);
@@ -59,6 +57,16 @@ public class EnterCardManualy extends Activity implements AdapterView.OnItemSele
                 intent.putExtra("Address", address);
                 intent.putExtra("PaymentConfirmed", true);
                 startActivityForResult(intent, 0);
+            }
+        });
+
+        TextView home = (TextView) findViewById(R.id.CardManualHome);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
             }
         });
 

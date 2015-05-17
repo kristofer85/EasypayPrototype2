@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Easy Pay"
-        android:id="@+id/textView2"
+        android:id="@+id/HomeHome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -55,7 +55,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="fyrirtæki ehf"
         android:id="@+id/AmountHome"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/HomeHome"
         android:layout_centerHorizontal="true" />
 
     <TextView

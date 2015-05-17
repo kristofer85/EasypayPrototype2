@@ -37,10 +37,12 @@ public class SoluYfirlit extends Activity {
         tagIncrementer++;
         mList.add(new Fearsla(74,"Fyrirt\u00e6ki ehf","19/02/2016",5000));
         tagIncrementer++;
+        final String user = getIntent().getStringExtra("User_Name");
 
         mGridView = (GridView) findViewById(R.id.faerslur);
 
-        this.adapter = new ArrayAdapter<Fearsla>(this, R.layout.activity_faersla, R.id.FN, mList) {
+        this.adapter = new ArrayAdapter<Fearsla>(this, R.layout.activity_faersla, R.id.FN, mList)
+        {
             @Override
             public View getView(final int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
@@ -48,38 +50,22 @@ public class SoluYfirlit extends Activity {
                 TextView text2 = (TextView) view.findViewById(R.id.FF);
                 TextView text3 = (TextView) view.findViewById(R.id.FD);
                 TextView text4 = (TextView) view.findViewById(R.id.FV);
-                //TextView btnDelete = (TextView) view.findViewById(R.id.deleteProduct);
+                //TextView text5 = (TextView) view.findViewById(R.id.BLEH);
                 Fearsla faersla = mList.get(position);
                 text1.setText(Integer.toString(faersla.FearsluNumer));
                 text2.setText(faersla.Fyrirtaeki);
                 text3.setText(faersla.Date);
                 text4.setText(Integer.toString(faersla.Verd));
                 //text2.setText(Integer.toString(faersla.Verd) + " ISK");
-                //btnDelete.setTag(ProductList.tagIncrementer);
+                //text5.setTag(Bakfaersla.tagIncrementer);
                 SoluYfirlit.tagIncrementer++;
 
-                /*
-                btnDelete.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        mList.remove(position);
-                        ProductList.this.adapter.notifyDataSetChanged();
-                        Toast.makeText(getApplicationContext(), "V?ru hefur veri? eytt", Toast.LENGTH_SHORT).show();
 
-                    }
-                });
-                */
+
 
 
                 return view;
             }
-            TextView home = (TextView) findViewById(R.id.textViewSoluYfirlit);
-            home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getBaseContext(), start.class);
-                    intent.putExtra("User_Name", user);
-                    startActivity(intent);
         };
 
         mGridView.setAdapter(adapter);
@@ -93,8 +79,19 @@ public class SoluYfirlit extends Activity {
                     }
                 }
         );
-        /*
 
+        TextView home = (TextView) findViewById(R.id.textViewSoluYfirlit);
+        home.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getBaseContext(), start.class);
+                intent.putExtra("User_Name", user);
+                startActivity(intent);
+            }
+
+        /*
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,18 +112,19 @@ public class SoluYfirlit extends Activity {
                 startActivityForResult(intent, 0);
 
             }
+         */
         });
-        */
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    }
+    //@Override
+    public boolean onCreateOptionsMenu(Menu menu)
+        {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_solu_yfirlit, menu);
         return true;
-    }
+        }
 
-    @Override
+    //@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long

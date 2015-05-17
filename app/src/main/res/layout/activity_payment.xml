@@ -14,7 +14,7 @@
         style="@style/productName"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/PaymentHome" />
+        android:id="@+id/CardManualHome" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/lblUser"
-        android:layout_below="@+id/PaymentHome"
+        android:layout_below="@+id/CardManualHome"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:textColor="#000000" />

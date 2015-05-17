@@ -4,7 +4,7 @@
     android:fitsSystemWindows="true"
     android:layout_height="fill_parent"
     android:background="@drawable/radialgradientback"
-    android:id="@+id/">
+    android:id="@+id/homeAct">
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         style="@style/productName"
-        android:id="@+id/textView2"
+        android:id="@+id/HomeHome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -60,7 +60,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/user"
         android:id="@+id/AmountHome"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/HomeHome"
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 

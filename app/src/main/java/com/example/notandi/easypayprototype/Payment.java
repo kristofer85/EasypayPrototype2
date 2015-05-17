@@ -53,7 +53,7 @@ public class Payment extends Activity {
             }
         });
 
-        TextView home = (TextView) findViewById(R.id.PaymentHome);
+        TextView home = (TextView) findViewById(R.id.CardManualHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

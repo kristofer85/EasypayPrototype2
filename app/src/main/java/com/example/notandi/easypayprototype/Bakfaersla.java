@@ -37,6 +37,7 @@ public class Bakfaersla extends Activity {
         tagIncrementer++;
         mList.add(new Fearsla(74,"Fyrirt?ki ehf","19/02/2016",5000));
         tagIncrementer++;
+        final String user = getIntent().getStringExtra("User_Name");
 
         mGridView = (GridView) findViewById(R.id.faerslur2);
 
@@ -88,12 +89,15 @@ public class Bakfaersla extends Activity {
         );
 
         TextView home = (TextView) findViewById(R.id.textViewEasyPayBakfaersla);
-        home.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Intent intent = new Intent(getBaseContext(), start.class);
                 intent.putExtra("User_Name", user);
                 startActivity(intent);
+            }
 
         /*
         btnPlus.setOnClickListener(new View.OnClickListener() {
@@ -116,8 +120,9 @@ public class Bakfaersla extends Activity {
                 startActivityForResult(intent, 0);
 
             }
+         */
         });
-        */
+
     }
 
     @Override
@@ -142,3 +147,5 @@ public class Bakfaersla extends Activity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+
